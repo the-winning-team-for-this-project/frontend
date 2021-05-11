@@ -1,0 +1,11 @@
+Components 
+
+1st Sprint
+- Navbar 
+- PersonProfile 
+- Regform
+
+2nd Sprint
+- PersonSearchForm 
+- LocationSearchForm 
+- LocationResults 
