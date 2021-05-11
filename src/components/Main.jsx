@@ -1,10 +1,16 @@
 import React from 'react'
+import Nav from './Navbar'
+import Container from 'react-bootstrap/Container'
+
 
 const Main = () => {
     return (
-        <div>
-            <p>Words on the main page</p>
-        </div>
+        <>
+        <Nav />
+        <Container>
+        <p>Words on the main page</p>
+        </Container>
+        </>
     )
 }
 
