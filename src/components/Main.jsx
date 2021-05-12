@@ -8,7 +8,7 @@ const Main = () => {
         <>
         <Nav />
         <Container>
-        <p>Words on the main page</p>
+        <h1>Words on the main page</h1>
         </Container>
         </>
     )
