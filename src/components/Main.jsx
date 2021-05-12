@@ -1,17 +1,19 @@
 import React from 'react'
 import Nav from './Navbar'
 import Container from 'react-bootstrap/Container'
+import Profile from './Profile'
+import ProfileContent from './ProfileContent'
 
 
 const Main = () => {
     return (
         <>
         <Nav />
-        <Container>
-        <p>Words on the main page</p>
-        </Container>
+        <Container></Container>
+        <ProfileContent/>
+        <Profile/>
         </>
     )
 }
 
-export default Main
+export default Main;
