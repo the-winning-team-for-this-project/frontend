@@ -5,26 +5,25 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
+ 
 
-export class DataList extends React.Component {
-  state = {
-    info: []
+
+export const ProfileData = () => {
+
+  const [profiles, setProfiles] = useState([]);
+
+  const searchPeople = () => {
+    axios.get(`http://localhost:5000/vehicle`)
+      .then(({data}) => setProfiles(data.Search))
+      .catch(err => console.log(err));
   }
 
- componentDidMount() {
-   axios.get('http://localhost:5000/vehicle')
-   .then(res => {
-     console.log(res);
-     this.setState({ info:res.data });
-   });
- } 
- render() {
-   return<ul>
-     {this.state.info.map(info => <li>{info.data}</li>)}
-   </ul>
- }
-
+  return ( 
+      <>
+          <ProfileContent profiles={profiles}/>
+      </>
+   );
 }
 
 const useStyles = makeStyles((theme) => ({
