@@ -5,28 +5,27 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
+import {useState, useEffect} from 'react';
 
-// export default class DataList extends React.Component {
-//     state = {
-//       persons: []
-//     }
-  
-//     componentDidMount() {
-//       axios.get(`https://localhost/5000`)
-//         .then(res => {
-//           const persons = res.data;
-//           this.setState({ profileData });
-//         })
-//     }
-  
-//     render() {
-//       return (
-//         <ul>
-//           { this.state.profiles.map(profile => <li>{profile.name}</li>)}
-//         </ul>
-//       )
-//     }
-//   }
+export class DataList extends React.Component {
+  state = {
+    info: []
+  }
+
+ componentDidMount() {
+   axios.get('http://localhost:5000/vehicle')
+   .then(res => {
+     console.log(res);
+     this.setState({ info:res.data });
+   });
+ } 
+ render() {
+   return<ul>
+     {this.state.info.map(info => <li>{info.data}</li>)}
+   </ul>
+ }
+
+}
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -105,3 +104,4 @@ export default function SimpleAccordion() {
     </div>
   );
 }
+
