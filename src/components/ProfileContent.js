@@ -8,23 +8,12 @@ import axios from 'axios';
 import {useState} from 'react';
  
 
-
-export const ProfileData = () => {
-
-  const [profiles, setProfiles] = useState([]);
-
-  const searchPeople = () => {
+  const searchProfiles = (e) => {
     axios.get(`http://localhost:5000/vehicle`)
-      .then(({data}) => setProfiles(data.Search))
-      .catch(err => console.log(err));
-  }
-
-  return ( 
-      <>
-          <ProfileContent profiles={profiles}/>
-      </>
-   );
-}
+    .then(response => {
+      console.log(response.data);
+    });
+  };
 
 const useStyles = makeStyles((theme) => ({
     root: {
