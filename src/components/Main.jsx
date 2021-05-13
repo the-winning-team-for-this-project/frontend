@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Nav from './Navbar'
+import Container from 'react-bootstrap/Container'
+import Profile from './Profile'
+import ProfileContent from './ProfileContent'
+
 
 const Main = () => {
+
+
+
     return (
-        <div>
-            <p>Words on the main page</p>
-        </div>
+        
+        <>
+        <Nav />
+        <Container></Container>
+        <h1>First Name, Last Name</h1>
+        <ProfileContent/>
+        <Profile/>
+        </>
     )
 }
 
-export default Main
+export default Main;
