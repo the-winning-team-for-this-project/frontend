@@ -1,11 +1,11 @@
 import React from "react";
 
-const RegMatch = ({ vehicleRegistrationNo, Make, Model }) => {
+const RegMatch = ({ id, vehicleRegistrationNo, make }) => {
   return (
     <>
       <h2>{vehicleRegistrationNo}</h2>
-      <p>{Make}</p>
-      <p>{Model}</p>
+      <p>{id}</p>
+      <p>{make}</p>
     </>
   );
 };

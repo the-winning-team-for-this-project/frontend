@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from './Navbar'
-import RegMatches from './RegMatches'
+import RegSearch from './RegSearch'
 import Container from 'react-bootstrap/Container'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 
@@ -15,7 +15,7 @@ const Main = () => {
           <p>Home</p>
         </Route>
         <Route path="/vehicle-search">
-          <RegMatches/>
+          <RegSearch/>
         </Route>
         </Router>
         </Container>

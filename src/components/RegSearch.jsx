@@ -2,10 +2,12 @@ import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import { Form, Button } from 'react-bootstrap'
+import RegMatches from './RegMatches'
 
-const RegSearchBar = () => {
+const RegSearch = () => {
 
     const [regSearch, setRegSearch] = useState("")
+    const [regSearchData, setRegSearchData] = useState([])
     const API_URL = "http://localhost:5000/vehicle?vehicleRegistrationNo="
 
     const handleSubmit = (e) => {
@@ -18,11 +20,11 @@ const RegSearchBar = () => {
         e.preventDefault()
         axios.get(API_URL + regSearch)
         .then(res => {
+            setRegSearchData(res.data);
             console.log(res.data)
           })
-          .catch(err => console.log(err))
+        .catch(err => console.log(err))
       }
-    
 
     return (
         <>
@@ -36,8 +38,15 @@ const RegSearchBar = () => {
             </Form.Group>
             <Button type="submit">Submit</Button>
         </Form>
+        <p>FK59 TDY</p>
+
+        {regSearchData &&
+            <RegMatches vehData={regSearchData} />
+        }
+            
+
         </>
     )
 }
 
-export default RegSearchBar
+export default RegSearch

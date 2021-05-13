@@ -1,17 +1,13 @@
-import RegSearchBar from './RegSearchBar'
-import { useState } from 'react'
-const RegMatches = () => {
+import RegMatch from './RegMatch'
 
-    const [vehicles, setVehicles] = useState([])
+const RegMatches = (vehData) => {
 
+    //const vehicles = vehData.map(vehicle =>  <RegMatch id={vehicle.id} vehicleRegistrationNo={vehicle.Poster} make={vehicle.Make}/>)
 
     return (
-        <>
-        {/* <RegSearchBar regSearch={regSearch} searchVehicles={searchVehicles} handleSubmit={handleSubmit}/> */}
-        <RegSearchBar/>           
-         {/* {vehMatches}  */}
-            <p>FK59 TDY</p>
-        </>
+        <div>
+           {/* {vehicles} */}
+        </div>
     )
 }
 
