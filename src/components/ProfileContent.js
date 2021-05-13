@@ -75,7 +75,7 @@ export default function SimpleAccordion() {
                Make: Ford <br/>
                Model: Punto <br/>
                Colour: Yellow <br/>
-               Registration Date: <br/>
+              Registration Date: <br/>
           </Typography>
         </AccordionDetails>
       </Accordion>

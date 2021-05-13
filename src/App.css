@@ -1,85 +1,23 @@
     /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
+     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-    
-    .text {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 40px;
-      position: absolute center;
-      text-align: center;
-      padding-left: 0%;
-      color: #000;
-      margin-top: 43px;
-    }
 
     :root{
-      width:350px;
+      width:600px;
       margin:auto;
       /*margin:50px 400px 50px 400px;*/
       max-width:100%;
     }
     
-    .heading{
-      background-color:transparent !important;
-    }
     
-    .title{
+    .h1{
       text-align: center;
       background-color:transparent;
       color:#000;
-      font-family:lato;
+      font-family:Arial, Helvetica, sans-serif;
       font-weight:300;
       font-size:15px;
       max-width:100%;
     }
-    
-    
-    #accordion{
-      background-color: transparent;
-      max-width:100%;
-      margin-bottom:200px;
-    }
-    
-    
-.btn-outline {
-  color: inherit;
-  transition: all 1.4s;
-  background-color: transparent;
-}
-/* button CSS */
-
-.btn-danger.btn-outline {
-  margin-top: 9px;
-  background-color: transparent;
-  color: #000;
-  border-color: #000;
-  padding:auto;
-  padding:10px 0px 10px 0px;
-  margin: 1px 5px 1px 0px;
-  width: 100%;
-  text-align:center;
-  font-family: raleway;
-  font-weight: 300;
-  max-width:100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
