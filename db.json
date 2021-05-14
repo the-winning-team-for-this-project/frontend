@@ -1,24 +1,25 @@
-{ 
+{
   "vehicle": [
     {
-    "registrationID": "112111",
-    "registrationDate": "2002-11-11",
-    "vehicleRegistrationNo": "FK59 TDY",
-    "make": "Ford",
-    "model": "Punto",
-    "colour": "Yellow",
-    "forename": "Karen",
-    "surname": "Robertson",
-    "address": {
+      "id": 1,
+      "registrationID": "112111",
+      "registrationDate": "2002-11-11",
+      "vehicleRegistrationNo": "FK59 TDY",
+      "make": "Ford",
+      "model": "Punto",
+      "colour": "Yellow",
+      "forename": "Karen",
+      "surname": "Robertson",
+      "address": {
         "streetAddress": "666 Low Street",
         "city": "Manchester",
         "postalCode": "MT11 5DD"
+      },
+      "dateOfBirth": "1975-02-06",
+      "driverLicenceID": "ROBIO123123KL9K123"
     },
-    "dateOfBirth": "1975-02-06",
-    "driverLicenceID": "ROBIO123123KL9K123"
-    }, 
-
     {
+      "id": 2,
       "registrationID": "2222111",
       "registrationDate": "2003-12-12",
       "vehicleRegistrationNo": "AB11 TDZ",
@@ -28,12 +29,12 @@
       "forename": "Bobert",
       "surname": "Bobertson",
       "address": {
-          "streetAddress": "1 A Street",
-          "city": "Dartmouth",
-          "postalCode": "DT22 1AA"
+        "streetAddress": "1 A Street",
+        "city": "Dartmouth",
+        "postalCode": "DT22 1AA"
       },
       "dateOfBirth": "1999-01-05",
       "driverLicenceID": "BOBW4321AA1A321"
-      }
+    }
   ]
 }
