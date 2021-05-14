@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Nav from './Navbar'
 import Container from 'react-bootstrap/Container'
-import Profile from './Profile'
+import FetchProfile from './FetchProfile'
 
 
 const Main = () => {
@@ -12,7 +12,7 @@ const Main = () => {
         
         <>
         <Nav />
-        <Profile/>
+        <FetchProfile/>
         </>
     )
 }
