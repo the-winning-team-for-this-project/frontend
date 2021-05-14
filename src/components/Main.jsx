@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Nav from './Navbar'
 import RegSearch from './RegSearch'
 import Container from 'react-bootstrap/Container'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
+import Profile from './Profile'
+import ProfileContent from './ProfileContent'
+
 
 
 const Main = () => {
+
+
+
     return (
+        
         <>
         <Nav />
+
         <Container>
         <Router>
         <Route exact path="/">
@@ -19,8 +27,12 @@ const Main = () => {
         </Route>
         </Router>
         </Container>
+
+        <ProfileContent/>
+        <Profile/>
+
         </>
     )
 }
 
-export default Main
+export default Main;
