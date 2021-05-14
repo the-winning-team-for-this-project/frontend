@@ -1,6 +1,7 @@
-{ 
+{
   "vehicle": [
     {
+
     "vehicleRegistrationNo": "FK59 TDY",
     "make": "Ford",
     "model": "Punto",
@@ -8,32 +9,34 @@
     "forenames": "Karen",
     "surname": "Robertson",
     "homeAddress": {
-        "streetAddress": "666 Low Street",
-        "city": "Manchester",
-        "postalCode": "MT11 5DD"
-    },
-    "dateOfBirth": "1975-02-06",
-    "latitude": 91809833,
-    "longitude": 90898803,
-    "timestamp": "11-11-11"
-    }, 
 
+      "id": 1,
+      "registrationID": "112111",
+      "registrationDate": "2002-11-11",
+      "vehicleRegistrationNo": "FK59 TDY",
+      "make": "Ford",
+      "model": "Punto",
+      "colour": "Yellow",
+      "forename": "Karen",
+      "surname": "Robertson"
+    },
     {
-      "vehicleRegistrationNo": "FK88 TAA",
+      "id": 2,
+      "registrationID": "2222111",
+      "registrationDate": "2003-12-12",
+      "vehicleRegistrationNo": "AB11 TDZ",
       "make": "Ford",
       "model": "Focus",
-      "colour": "Blue",
-      "forenames": "Bobert",
-      "surname": "Robertson",
-      "homeAddress": {
-          "streetAddress": "111 Yellow Street",
-          "city": "Colchester",
-          "postalCode": "AB11 1AA"
+      "colour": "Green",
+      "forename": "Bobert",
+      "surname": "Bobertson",
+      "address": {
+        "streetAddress": "1 A Street",
+        "city": "Dartmouth",
+        "postalCode": "DT22 1AA"
       },
-      "dateOfBirth": "1979-11-11",
-      "latitude": 99309811,
-      "longitude": 90228443,
-      "timestamp": "13-13-13"
-      }
+      "dateOfBirth": "1999-01-05",
+      "driverLicenceID": "BOBW4321AA1A321"
+    }
   ]
 }
