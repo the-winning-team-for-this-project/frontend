@@ -1,6 +1,15 @@
 {
   "vehicle": [
     {
+
+    "vehicleRegistrationNo": "FK59 TDY",
+    "make": "Ford",
+    "model": "Punto",
+    "colour": "Yellow",
+    "forenames": "Karen",
+    "surname": "Robertson",
+    "homeAddress": {
+
       "id": 1,
       "registrationID": "112111",
       "registrationDate": "2002-11-11",
@@ -9,14 +18,7 @@
       "model": "Punto",
       "colour": "Yellow",
       "forename": "Karen",
-      "surname": "Robertson",
-      "address": {
-        "streetAddress": "666 Low Street",
-        "city": "Manchester",
-        "postalCode": "MT11 5DD"
-      },
-      "dateOfBirth": "1975-02-06",
-      "driverLicenceID": "ROBIO123123KL9K123"
+      "surname": "Robertson"
     },
     {
       "id": 2,
