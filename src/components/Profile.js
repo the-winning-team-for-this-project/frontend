@@ -2,14 +2,14 @@ import { Accordion, Card, Button } from 'react-bootstrap'
 import axios from 'axios'
  
 
-  const searchProfiles = (e) => {
+  const searchProfile = (e) => {
     axios.get(`http://localhost:5000/vehicle`)
     .then(response => {
       console.log(response.data);
     });
   };
 
-
+searchProfile()
 
   const Profile = () => {
     return (
