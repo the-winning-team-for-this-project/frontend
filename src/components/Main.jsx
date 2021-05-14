@@ -18,6 +18,7 @@ const Main = () => {
         <Nav />
 
         <Container>
+
         <Router>
         <Route exact path="/">
           <p>Home</p>
@@ -26,10 +27,11 @@ const Main = () => {
           <RegSearch/>
         </Route>
         </Router>
-        </Container>
-
         <ProfileContent/>
         <Profile/>
+        </Container>
+
+        
 
         </>
     )
