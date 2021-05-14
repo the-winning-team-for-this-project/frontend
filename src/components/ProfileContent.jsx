@@ -1,8 +1,7 @@
 import React from 'react'
-import { Accordion, Card, Button } from 'react-bootstrap'
+import { Accordion, Card, ListGroup } from 'react-bootstrap'
 
 const ProfileContent = ({ profileData }) => {
-
     console.log(profileData)
     
     return (
@@ -10,44 +9,54 @@ const ProfileContent = ({ profileData }) => {
             <Accordion defaultActiveKey="0">
             <Card>
                 <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                    Vehicle Information
-                </Accordion.Toggle>
+                    <Accordion.Toggle as={Card.Header} eventKey="0">
+                        <h3>Vehicle Information</h3>
+                    </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="0">
-                <Card.Body>
-                <p>{profileData[0].vehicleRegistrationNo}</p>
-                <p>{profileData[0].make}</p>
-                <p>{profileData[0].model}</p>
-                <p>{profileData[0].colour}</p>
-                <p>{profileData[0].registrationDate}</p>
-                </Card.Body>
+                    <Card.Body>
+                        <ListGroup>
+                            <ListGroup.Item><b>Registration Number:</b> {profileData[0].vehicleRegistrationNo}</ListGroup.Item>
+                            <ListGroup.Item><b>Make:</b> {profileData[0].make}</ListGroup.Item>
+                            <ListGroup.Item><b>Model:</b> {profileData[0].model}</ListGroup.Item>
+                            <ListGroup.Item><b>Colour:</b> {profileData[0].colour}</ListGroup.Item>
+                            <ListGroup.Item><b>Registration Date:</b> {profileData[0].registrationDate}</ListGroup.Item>
+                        </ListGroup>
+                    </Card.Body>
                 </Accordion.Collapse>
             </Card>
             <Card>
                 <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                    Suspect Information
-                </Accordion.Toggle>
+                    <Accordion.Toggle as={Card.Header} eventKey="1">
+                        <h3>Suspect Information</h3>
+                    </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="1">
-                <Card.Body>     
-                    <p>{profileData[0].forenames}</p>
-                    <p>{profileData[0].surname}</p>
-                    <p>{profileData[0].address}</p>
-                    <p>{profileData[0].dateOfBirth}</p>
-                </Card.Body>
+                    <Card.Body>    
+                    <ListGroup>
+                        <ListGroup.Item><b>Forename(s):</b> {profileData[0].forenames}</ListGroup.Item>
+                        <ListGroup.Item><b>Surname: </b>{profileData[0].surname}</ListGroup.Item>
+                        <ListGroup.Item><b>Address:</b> {profileData[0].address}</ListGroup.Item>
+                        <ListGroup.Item><b>Date of Birth:</b> {profileData[0].dateOfBirth}</ListGroup.Item>
+                    </ListGroup> 
+                    </Card.Body>
                 </Accordion.Collapse>
             </Card>
             <Card>
                 <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                    ANPR Information
+                <Accordion.Toggle as={Card.Header} eventKey="2">
+                    <h3>ANPR Information</h3>
                 </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
                 <Card.Body>     
-                    <p>location data here</p>
+                    <ListGroup>
+                        <ListGroup.Item><b>Registration Number:</b> {profileData[0].vehicleRegistrationNo}</ListGroup.Item>
+                        <ListGroup.Item><b>Make:</b> {profileData[0].make}</ListGroup.Item>
+                        <ListGroup.Item><b>Model:</b> {profileData[0].model}</ListGroup.Item>
+                        <ListGroup.Item><b>Colour:</b> {profileData[0].colour}</ListGroup.Item>
+                        <ListGroup.Item><b>Registration Date:</b> {profileData[0].registrationDate}</ListGroup.Item>
+                    </ListGroup>
                 </Card.Body>
                 </Accordion.Collapse>
             </Card>
