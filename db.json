@@ -2,11 +2,15 @@
   "searchSuspect": [
     {
     "vehicleRegistrationNo": "FK59 TDY",
+    "registrationDate": "01-01-01",
+    "driverLicenceID": "1234567890",
     "make": "Ford",
     "model": "Punto",
     "colour": "Yellow",
-    "forename": "Karen",
-    "surname": "Robertson"
+    "forenames": "Karen",
+    "surname": "Robertson",
+    "address": "123 Yellow Brick Road, ABCD 1AB",
+    "dateOfBirth": "10-10-1987"
     }
   ]
 }

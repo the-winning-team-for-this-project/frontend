@@ -4,11 +4,9 @@ import { Accordion, Card, Button } from 'react-bootstrap'
 const ProfileContent = ({ profileData }) => {
 
     console.log(profileData)
+    
     return (
         <div>
-
-            <p>{profileData.surname}</p>
-
             <Accordion defaultActiveKey="0">
             <Card>
                 <Card.Header>
@@ -17,7 +15,13 @@ const ProfileContent = ({ profileData }) => {
                 </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="0">
-                <Card.Body>insert veh info here</Card.Body>
+                <Card.Body>
+                <p>{profileData[0].vehicleRegistrationNo}</p>
+                <p>{profileData[0].make}</p>
+                <p>{profileData[0].model}</p>
+                <p>{profileData[0].colour}</p>
+                <p>{profileData[0].registrationDate}</p>
+                </Card.Body>
                 </Accordion.Collapse>
             </Card>
             <Card>
@@ -27,7 +31,24 @@ const ProfileContent = ({ profileData }) => {
                 </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="1">
-                <Card.Body>data.forename</Card.Body>
+                <Card.Body>     
+                    <p>{profileData[0].forenames}</p>
+                    <p>{profileData[0].surname}</p>
+                    <p>{profileData[0].address}</p>
+                    <p>{profileData[0].dateOfBirth}</p>
+                </Card.Body>
+                </Accordion.Collapse>
+            </Card>
+            <Card>
+                <Card.Header>
+                <Accordion.Toggle as={Button} variant="link" eventKey="2">
+                    ANPR Information
+                </Accordion.Toggle>
+                </Card.Header>
+                <Accordion.Collapse eventKey="2">
+                <Card.Body>     
+                    <p>location data here</p>
+                </Card.Body>
                 </Accordion.Collapse>
             </Card>
             </Accordion>

@@ -5,14 +5,14 @@ import FetchProfile from './FetchProfile'
 
 
 const Main = () => {
-
-
-
     return (
         
         <>
         <Nav />
+        <Container>
+
         <FetchProfile/>
+        </Container>
         </>
     )
 }

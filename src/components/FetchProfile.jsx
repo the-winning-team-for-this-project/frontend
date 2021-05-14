@@ -27,7 +27,9 @@ useEffect(() => {
   
     return (
       <>
+      {profileData && 
         <ProfileContent profileData={profileData}/>
+        }
       </>
   );
 }
