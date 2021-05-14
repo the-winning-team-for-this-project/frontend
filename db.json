@@ -1,42 +1,16 @@
 {
-  "vehicle": [
+  "searchSuspect": [
     {
-
     "vehicleRegistrationNo": "FK59 TDY",
+    "registrationDate": "01-01-01",
+    "driverLicenceID": "1234567890",
     "make": "Ford",
     "model": "Punto",
     "colour": "Yellow",
     "forenames": "Karen",
     "surname": "Robertson",
-    "homeAddress": {
-
-      "id": 1,
-      "registrationID": "112111",
-      "registrationDate": "2002-11-11",
-      "vehicleRegistrationNo": "FK59 TDY",
-      "make": "Ford",
-      "model": "Punto",
-      "colour": "Yellow",
-      "forename": "Karen",
-      "surname": "Robertson"
-    },
-    {
-      "id": 2,
-      "registrationID": "2222111",
-      "registrationDate": "2003-12-12",
-      "vehicleRegistrationNo": "AB11 TDZ",
-      "make": "Ford",
-      "model": "Focus",
-      "colour": "Green",
-      "forename": "Bobert",
-      "surname": "Bobertson",
-      "address": {
-        "streetAddress": "1 A Street",
-        "city": "Dartmouth",
-        "postalCode": "DT22 1AA"
-      },
-      "dateOfBirth": "1999-01-05",
-      "driverLicenceID": "BOBW4321AA1A321"
+    "address": "123 Yellow Brick Road, ABCD 1AB",
+    "dateOfBirth": "10-10-1987"
     }
   ]
 }
