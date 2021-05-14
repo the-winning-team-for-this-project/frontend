@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useHistory } from "react-router-dom";
-import { Form, Button } from 'react-bootstrap'
+import { Form, Button, Jumbotron } from 'react-bootstrap'
 
 const RegSearch = () => {
 
@@ -19,6 +19,7 @@ const RegSearch = () => {
 
     return (
         <>
+        <Jumbotron>
         <h1>Vehicle Search</h1>
         <p>
           Search for a vehicle using a registration plate.
@@ -28,7 +29,8 @@ const RegSearch = () => {
                 <Form.Control required size="lg" type="text" placeholder="Enter a registration with correct spaces here eg. AA11 1AA" value={regSearch} onChange={(e)=>handleSubmit(e)}/>
             </Form.Group>
             <Button type="submit" onClick={handleClick}>Submit</Button>
-        </Form>         
+        </Form>  
+        </Jumbotron>       
         </>
     )
 }
