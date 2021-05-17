@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import FetchProfile from './FetchProfile'
 import RegSearch from './RegSearch'
