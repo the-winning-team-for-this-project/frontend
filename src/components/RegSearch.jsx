@@ -1,7 +1,6 @@
-import React from 'react'
-import { useState } from 'react'
-import { useHistory } from "react-router-dom";
 import { Form, Button, Jumbotron } from 'react-bootstrap'
+import { useHistory } from 'react-router-dom'
+import { useState } from 'react'
 
 const RegSearch = () => {
 

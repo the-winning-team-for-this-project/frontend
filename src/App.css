@@ -61,3 +61,7 @@
       max-width:100%;
     }
 
+.leaflet-container{
+  width: 80vw;
+  height: 70vh;
+}

@@ -1,27 +1,27 @@
-import React from 'react'
-import SiteNavbar from './Navbar'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import FetchProfile from './FetchProfile'
 import RegSearch from './RegSearch'
-
+import SiteNavbar from './Navbar'
+import MapView from './MapView'
 
 const Main = () => {
-    return (
-        
+    return (  
         <>
-        <SiteNavbar />
-
-        <Container>
-            <Router>
-                <Route path="/vehicle-search">
-                    <RegSearch/>
-                </Route>
-                <Route path="/getSuspect/:reg">
-                    <FetchProfile/>
-                </Route>
-            </Router>
-        </Container>
+            <SiteNavbar />
+            <Container>
+                <Router>
+                    <Route path="/vehicle-search">
+                        <RegSearch/>
+                    </Route>
+                    <Route path="/getSuspect/:reg">
+                        <FetchProfile/>
+                    </Route>
+                    <Route path="/map-view/:reg">
+                        <MapView/>
+                    </Route>
+                </Router>
+            </Container>
         </>
     )
 }
