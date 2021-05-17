@@ -1,9 +1,15 @@
-import React from 'react'
-import { Accordion, Card, ListGroup } from 'react-bootstrap'
+import { Accordion, Card, ListGroup, Table, Button } from 'react-bootstrap'
+import LocationTableData from './LocationTableData'
 
-const ProfileContent = ({ profileData }) => {
-    console.log(profileData)
-    
+const ProfileContent = ({ profileData, buttonClick }) => {
+
+    const locationData = profileData.locations.map((location, index) => {
+        return (
+                <LocationTableData
+                  key={index}
+                  location={location}/>
+              )})
+
     return (
         <div>
             <Accordion defaultActiveKey="0">
@@ -16,11 +22,9 @@ const ProfileContent = ({ profileData }) => {
                 <Accordion.Collapse eventKey="0">
                     <Card.Body>
                         <ListGroup>
-                            <ListGroup.Item><b>Registration Number:</b> {profileData[0].vehicleRegistrationNo}</ListGroup.Item>
-                            <ListGroup.Item><b>Make:</b> {profileData[0].make}</ListGroup.Item>
-                            <ListGroup.Item><b>Model:</b> {profileData[0].model}</ListGroup.Item>
-                            <ListGroup.Item><b>Colour:</b> {profileData[0].colour}</ListGroup.Item>
-                            <ListGroup.Item><b>Registration Date:</b> {profileData[0].registrationDate}</ListGroup.Item>
+                            <ListGroup.Item><b>Make:</b> {profileData.make}</ListGroup.Item>
+                            <ListGroup.Item><b>Model:</b> {profileData.model}</ListGroup.Item>
+                            <ListGroup.Item><b>Colour:</b> {profileData.colour}</ListGroup.Item>
                         </ListGroup>
                     </Card.Body>
                 </Accordion.Collapse>
@@ -34,10 +38,10 @@ const ProfileContent = ({ profileData }) => {
                 <Accordion.Collapse eventKey="1">
                     <Card.Body>    
                     <ListGroup>
-                        <ListGroup.Item><b>Forename(s):</b> {profileData[0].forenames}</ListGroup.Item>
-                        <ListGroup.Item><b>Surname: </b>{profileData[0].surname}</ListGroup.Item>
-                        <ListGroup.Item><b>Address:</b> {profileData[0].address}</ListGroup.Item>
-                        <ListGroup.Item><b>Date of Birth:</b> {profileData[0].dateOfBirth}</ListGroup.Item>
+                        <ListGroup.Item><b>Forename(s):</b> {profileData.forenames}</ListGroup.Item>
+                        <ListGroup.Item><b>Surname: </b>{profileData.surname}</ListGroup.Item>
+                        <ListGroup.Item><b>Address:</b> {profileData.address}</ListGroup.Item>
+                        <ListGroup.Item><b>Date of Birth:</b> {profileData.dateOfBirth}</ListGroup.Item>
                     </ListGroup> 
                     </Card.Body>
                 </Accordion.Collapse>
@@ -49,19 +53,25 @@ const ProfileContent = ({ profileData }) => {
                 </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
-                <Card.Body>     
-                    <ListGroup>
-                        <ListGroup.Item><b>Registration Number:</b> {profileData[0].vehicleRegistrationNo}</ListGroup.Item>
-                        <ListGroup.Item><b>Make:</b> {profileData[0].make}</ListGroup.Item>
-                        <ListGroup.Item><b>Model:</b> {profileData[0].model}</ListGroup.Item>
-                        <ListGroup.Item><b>Colour:</b> {profileData[0].colour}</ListGroup.Item>
-                        <ListGroup.Item><b>Registration Date:</b> {profileData[0].registrationDate}</ListGroup.Item>
-                    </ListGroup>
-                </Card.Body>
+                    <Card.Body>     
+                        <Table striped bordered hover size="sm">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Location</th>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                            </tr>
+                        </thead>
+                        <tbody>                      
+                            {locationData}
+                        </tbody>
+                        </Table>
+                        <Button variant="primary" size="lg" block onClick={buttonClick}>View on a map</Button>{' '}
+                    </Card.Body>
                 </Accordion.Collapse>
             </Card>
             </Accordion>
-
         </div>
     )
 }

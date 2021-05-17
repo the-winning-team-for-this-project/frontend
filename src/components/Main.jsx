@@ -1,18 +1,16 @@
-import React from 'react'
-import SiteNavbar from './Navbar'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import FetchProfile from './FetchProfile'
 import RegSearch from './RegSearch'
+import SiteNavbar from './Navbar'
+import MapView from './MapView'
 import NotFoundPage from './NotFoundPage'
 
 
 const Main = () => {
-    return (
-        
+    return (  
         <>
         <SiteNavbar />
-
         <Container>
             <Router>
                 <Switch>
@@ -24,6 +22,9 @@ const Main = () => {
                     </Route>
                     <Route path="/getSuspect/:reg">
                         <FetchProfile/>
+                    </Route>
+                    <Route path="/map-view/:reg">
+                        <MapView/>
                     </Route>
                     <Route>
                         <NotFoundPage/>
