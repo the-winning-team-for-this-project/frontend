@@ -1,6 +1,7 @@
 import React from 'react'
 import { Accordion, Card, ListGroup } from 'react-bootstrap'
 
+
 const ProfileContent = ({ profileData }) => {
     console.log(profileData)
     
@@ -60,10 +61,33 @@ const ProfileContent = ({ profileData }) => {
                 </Card.Body>
                 </Accordion.Collapse>
             </Card>
+            <Card>
+                <Card.Header>
+                <Accordion.Toggle as={Card.Header} eventKey="2">
+                    <h3>Location Data</h3>
+                </Accordion.Toggle>
+                </Card.Header>
+                <Accordion.Collapse eventKey="2">
+                <Card.Body>     
+                    <ListGroup>
+                        <ListGroup.Item><b>Street Name:</b> {profileData[0].streetName}</ListGroup.Item>
+                        <ListGroup.Item><b>Latitude:</b> {profileData[0].latitude}</ListGroup.Item>
+                        <ListGroup.Item><b>Longitude:</b> {profileData[0].longitude}</ListGroup.Item>
+                        <ListGroup.Item><b>Timestamp:</b> {profileData[0].timestamp}</ListGroup.Item>
+                    </ListGroup>
+                </Card.Body>
+                </Accordion.Collapse>
+            </Card>
             </Accordion>
+
+            
 
         </div>
     )
+
+    
 }
+
+
 
 export default ProfileContent
