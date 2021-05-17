@@ -1,13 +1,14 @@
-
 import axios from 'axios'
 import {useState, useEffect} from 'react'
 import ProfileContent from './ProfileContent'
-import { useParams } from "react-router";
+import { useParams } from "react-router"
+import { useHistory } from "react-router-dom"
 
 
 const FetchProfile = () => {
 
 const [profileData,setData]= useState("");
+const history = useHistory()
 
 // grab reg from URL
 const params = useParams();
@@ -25,8 +26,12 @@ useEffect(() => {
       const profileJSON = res.data
       setData(profileJSON)
       })
-      .catch(err => console.log(err))
+      .catch(err => {
+        console.log(err)
+        history.push("/page-not-found")
+      })
     }
+    // if statement to redirect to 404 if no veh reg
     getProfileData()
     }, [])
   
