@@ -14,7 +14,7 @@ const params = useParams();
     const reg = params.reg;
 
 // will change to real api url
-const API_URL = "http://localhost:5000/getSuspect/"
+const API_URL = "http://localhost:5000/suspect/"
 
 useEffect(() => {
     const getProfileData = () => {
