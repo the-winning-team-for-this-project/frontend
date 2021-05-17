@@ -4,13 +4,19 @@ import FetchProfile from './FetchProfile'
 import RegSearch from './RegSearch'
 import SiteNavbar from './Navbar'
 import MapView from './MapView'
+import NotFoundPage from './NotFoundPage'
+
 
 const Main = () => {
     return (  
         <>
-            <SiteNavbar />
-            <Container>
-                <Router>
+        <SiteNavbar />
+        <Container>
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <h1>Home</h1>
+                    </Route>
                     <Route path="/vehicle-search">
                         <RegSearch/>
                     </Route>
@@ -20,8 +26,12 @@ const Main = () => {
                     <Route path="/map-view/:reg">
                         <MapView/>
                     </Route>
-                </Router>
-            </Container>
+                    <Route>
+                        <NotFoundPage/>
+                    </Route>
+                </Switch>
+            </Router>
+        </Container>
         </>
     )
 }

@@ -1,17 +1,20 @@
+
 import { useHistory } from 'react-router-dom'
+import axios from 'axios'
 import {useState, useEffect} from 'react'
 import { useParams } from "react-router"
-
 import ProfileContent from './ProfileContent'
 
-import axios from 'axios'
+
+
 
 const FetchProfile = () => {
 
   const [profileData,setData]= useState("")
   const history = useHistory()
   const params = useParams()
-    const reg = params.reg
+  const reg = params.reg
+
 
   //  change to real endpoint url
   const API_URL = "http://localhost:5000/suspect/"
@@ -24,8 +27,12 @@ const FetchProfile = () => {
       const profileJSON = res.data
       setData(profileJSON)
       })
-      .catch(err => console.log(err))
+      .catch(err => {
+        console.log(err)
+        history.push("/page-not-found")
+      })
     }
+    // if statement to redirect to 404 if no veh reg
     getProfileData()
     }, [])
 
