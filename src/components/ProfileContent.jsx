@@ -17,11 +17,11 @@ const ProfileContent = ({ profileData }) => {
                 <Accordion.Collapse eventKey="0">
                     <Card.Body>
                         <ListGroup>
-                            <ListGroup.Item><b>Registration Number:</b> {profileData[0].vehicleRegistrationNo}</ListGroup.Item>
-                            <ListGroup.Item><b>Make:</b> {profileData[0].make}</ListGroup.Item>
-                            <ListGroup.Item><b>Model:</b> {profileData[0].model}</ListGroup.Item>
-                            <ListGroup.Item><b>Colour:</b> {profileData[0].colour}</ListGroup.Item>
-                            <ListGroup.Item><b>Registration Date:</b> {profileData[0].registrationDate}</ListGroup.Item>
+                            <ListGroup.Item><b>Registration Number:</b> {profileData.vehicleRegistrationNo}</ListGroup.Item>
+                            <ListGroup.Item><b>Make:</b> {profileData.make}</ListGroup.Item>
+                            <ListGroup.Item><b>Model:</b> {profileData.model}</ListGroup.Item>
+                            <ListGroup.Item><b>Colour:</b> {profileData.colour}</ListGroup.Item>
+                            <ListGroup.Item><b>Registration Date:</b> {profileData.registrationDate}</ListGroup.Item>
                         </ListGroup>
                     </Card.Body>
                 </Accordion.Collapse>
@@ -35,10 +35,10 @@ const ProfileContent = ({ profileData }) => {
                 <Accordion.Collapse eventKey="1">
                     <Card.Body>    
                     <ListGroup>
-                        <ListGroup.Item><b>Forename(s):</b> {profileData[0].forenames}</ListGroup.Item>
-                        <ListGroup.Item><b>Surname: </b>{profileData[0].surname}</ListGroup.Item>
-                        <ListGroup.Item><b>Address:</b> {profileData[0].address}</ListGroup.Item>
-                        <ListGroup.Item><b>Date of Birth:</b> {profileData[0].dateOfBirth}</ListGroup.Item>
+                        <ListGroup.Item><b>Forename(s):</b> {profileData.forenames}</ListGroup.Item>
+                        <ListGroup.Item><b>Surname: </b>{profileData.surname}</ListGroup.Item>
+                        <ListGroup.Item><b>Address:</b> {profileData.address}</ListGroup.Item>
+                        <ListGroup.Item><b>Date of Birth:</b> {profileData.dateOfBirth}</ListGroup.Item>
                     </ListGroup> 
                     </Card.Body>
                 </Accordion.Collapse>
@@ -52,11 +52,11 @@ const ProfileContent = ({ profileData }) => {
                 <Accordion.Collapse eventKey="2">
                 <Card.Body>     
                     <ListGroup>
-                        <ListGroup.Item><b>Registration Number:</b> {profileData[0].vehicleRegistrationNo}</ListGroup.Item>
-                        <ListGroup.Item><b>Make:</b> {profileData[0].make}</ListGroup.Item>
-                        <ListGroup.Item><b>Model:</b> {profileData[0].model}</ListGroup.Item>
-                        <ListGroup.Item><b>Colour:</b> {profileData[0].colour}</ListGroup.Item>
-                        <ListGroup.Item><b>Registration Date:</b> {profileData[0].registrationDate}</ListGroup.Item>
+                        <ListGroup.Item><b>Registration Number:</b> {profileData.vehicleRegistrationNo}</ListGroup.Item>
+                        <ListGroup.Item><b>Make:</b> {profileData.make}</ListGroup.Item>
+                        <ListGroup.Item><b>Model:</b> {profileData.model}</ListGroup.Item>
+                        <ListGroup.Item><b>Colour:</b> {profileData.colour}</ListGroup.Item>
+                        <ListGroup.Item><b>Registration Date:</b> {profileData.registrationDate}</ListGroup.Item>
                     </ListGroup>
                 </Card.Body>
                 </Accordion.Collapse>
@@ -70,10 +70,7 @@ const ProfileContent = ({ profileData }) => {
                 <Accordion.Collapse eventKey="2">
                 <Card.Body>     
                     <ListGroup>
-                        <ListGroup.Item><b>Street Name:</b> {profileData[0].streetName}</ListGroup.Item>
-                        <ListGroup.Item><b>Latitude:</b> {profileData[0].latitude}</ListGroup.Item>
-                        <ListGroup.Item><b>Longitude:</b> {profileData[0].longitude}</ListGroup.Item>
-                        <ListGroup.Item><b>Timestamp:</b> {profileData[0].timestamp}</ListGroup.Item>
+                        <ListGroup.Item><b>Street Name:</b> {profileData.locations[0].streetName}</ListGroup.Item>
                     </ListGroup>
                 </Card.Body>
                 </Accordion.Collapse>
