@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: Bungee;
+  font-family: Bungee !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

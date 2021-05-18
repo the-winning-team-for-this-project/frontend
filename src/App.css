@@ -1,12 +1,9 @@
 
 .App {
   background-color: #282c34;
-  height: 100vh;
+  height: 100rem;
 }
 
-.h1 {
-  color: pink;
-}
 
      .navbar {
       margin-bottom: 0;
