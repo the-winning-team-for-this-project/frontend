@@ -14,6 +14,7 @@ const FetchProfile = () => {
   const reg = params.reg
 
 
+
   //  change to real endpoint url
   const API_URL = "http://localhost:5000/suspect/"
 

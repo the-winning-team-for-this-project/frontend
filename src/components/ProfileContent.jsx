@@ -10,6 +10,11 @@ const ProfileContent = ({ profileData, buttonClick }) => {
                   location={location}/>
               )})
 
+
+const ProfileContent = ({ profileData }) => {
+    console.log(profileData)
+    
+
     return (
         <div>
             <Accordion defaultActiveKey="0">
@@ -22,9 +27,11 @@ const ProfileContent = ({ profileData, buttonClick }) => {
                 <Accordion.Collapse eventKey="0">
                     <Card.Body>
                         <ListGroup>
+                            <ListGroup.Item><b>Registration Number:</b> {profileData.vehicleRegistrationNo}</ListGroup.Item>
                             <ListGroup.Item><b>Make:</b> {profileData.make}</ListGroup.Item>
                             <ListGroup.Item><b>Model:</b> {profileData.model}</ListGroup.Item>
                             <ListGroup.Item><b>Colour:</b> {profileData.colour}</ListGroup.Item>
+
                         </ListGroup>
                     </Card.Body>
                 </Accordion.Collapse>
@@ -53,6 +60,25 @@ const ProfileContent = ({ profileData, buttonClick }) => {
                 </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
+
+                <Card.Body>     
+                    <ListGroup>
+                        <ListGroup.Item><b>Registration Number:</b> {profileData.vehicleRegistrationNo}</ListGroup.Item>
+                        <ListGroup.Item><b>Make:</b> {profileData.make}</ListGroup.Item>
+                        <ListGroup.Item><b>Model:</b> {profileData.model}</ListGroup.Item>
+                        <ListGroup.Item><b>Colour:</b> {profileData.colour}</ListGroup.Item>
+                        <ListGroup.Item><b>Registration Date:</b> {profileData.registrationDate}</ListGroup.Item>
+                    </ListGroup>
+                </Card.Body>
+                </Accordion.Collapse>
+            </Card>
+            <Card>
+                <Card.Header>
+                <Accordion.Toggle as={Card.Header} eventKey="3">
+                    <h3>Location Data</h3>
+                </Accordion.Toggle>
+                </Card.Header>
+                <Accordion.Collapse eventKey="2">
                     <Card.Body>     
                         <Table striped bordered hover size="sm">
                         <thead>
@@ -74,6 +100,10 @@ const ProfileContent = ({ profileData, buttonClick }) => {
             </Accordion>
         </div>
     )
+
+    
 }
+
+
 
 export default ProfileContent
