@@ -1,4 +1,10 @@
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+
+.App {
+  background-color: #282c34;
+  height: 100vh;
+}
+
+
      .navbar {
       margin-bottom: 0;
       border-radius: 0;
@@ -27,6 +33,7 @@
   color: white;
 }
 
+
 .App-link {
   color: #61dafb;
 }
@@ -41,7 +48,7 @@
 }
 
 .navbar {
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
 
     :root{
@@ -68,7 +75,8 @@
 
 .container {
   line-height: 4;
-  text-align: center
+  text-align: center;
+  border-color: #282c34;
 }
 
 .accordion {
@@ -85,15 +93,16 @@
   color: whitesmoke;
 }
 
-.jumbotron {
+.jumbotron.scss {
   background-color: #282c34;
-  color: rgb(45, 26, 129);
 }
 
 .btn.btn-primary {
-  background-color: white;
-  color: black;
-  border: 2px solid rgb(45, 26, 129);
-  border-radius: 12px;
+  background: #3498db;
+  font-family: 'Roboto', sans-serif;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+height: 100%;
+width: 20%;
 
 }
