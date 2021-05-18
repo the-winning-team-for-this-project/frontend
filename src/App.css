@@ -41,7 +41,7 @@
 }
 
 .navbar {
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
 }
 
     :root{
@@ -64,4 +64,23 @@
 .leaflet-container{
   width: 80vw;
   height: 70vh;
+}
+
+.container {
+  line-height: 4;
+  text-align: center
+}
+
+.accordion {
+  font-size: 1.5rem;
+}
+
+.card-header:first-child {
+  background-color: #282c34;
+  border-radius: 15px 50px 30px 5px;
+  border-bottom: 0;
+}
+
+.card-header {
+  color: whitesmoke;
 }
