@@ -10,7 +10,6 @@
     "surname": "Robertson",
     "address": "123 Yellow Brick Road, ABCD 1AB",
     "dateOfBirth": "10-10-1987",
-  
     "locations": [
       {
     "streetName": "Camden Road, A503",
@@ -27,3 +26,4 @@
     }
   ] 
    }
+  

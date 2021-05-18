@@ -1,10 +1,20 @@
-import React from 'react'
-import { Accordion, Card, ListGroup } from 'react-bootstrap'
+import { Accordion, Card, ListGroup, Table, Button } from 'react-bootstrap'
+import LocationTableData from './LocationTableData'
+
+const ProfileContent = ({ profileData, buttonClick }) => {
+
+    const locationData = profileData.locations.map((location, index) => {
+        return (
+                <LocationTableData
+                  key={index}
+                  location={location}/>
+              )})
 
 
 const ProfileContent = ({ profileData }) => {
     console.log(profileData)
     
+
     return (
         <div>
             <Accordion defaultActiveKey="0">
@@ -21,7 +31,7 @@ const ProfileContent = ({ profileData }) => {
                             <ListGroup.Item><b>Make:</b> {profileData.make}</ListGroup.Item>
                             <ListGroup.Item><b>Model:</b> {profileData.model}</ListGroup.Item>
                             <ListGroup.Item><b>Colour:</b> {profileData.colour}</ListGroup.Item>
-                            <ListGroup.Item><b>Registration Date:</b> {profileData.registrationDate}</ListGroup.Item>
+
                         </ListGroup>
                     </Card.Body>
                 </Accordion.Collapse>
@@ -50,6 +60,7 @@ const ProfileContent = ({ profileData }) => {
                 </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
+
                 <Card.Body>     
                     <ListGroup>
                         <ListGroup.Item><b>Registration Number:</b> {profileData.vehicleRegistrationNo}</ListGroup.Item>
@@ -63,22 +74,30 @@ const ProfileContent = ({ profileData }) => {
             </Card>
             <Card>
                 <Card.Header>
-                <Accordion.Toggle as={Card.Header} eventKey="2">
+                <Accordion.Toggle as={Card.Header} eventKey="3">
                     <h3>Location Data</h3>
                 </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
-                <Card.Body>     
-                    <ListGroup>
-                        <ListGroup.Item><b>Street Name:</b> {profileData.locations[0].streetName}</ListGroup.Item>
-                    </ListGroup>
-                </Card.Body>
+                    <Card.Body>     
+                        <Table striped bordered hover size="sm">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Location</th>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                            </tr>
+                        </thead>
+                        <tbody>                      
+                            {locationData}
+                        </tbody>
+                        </Table>
+                        <Button variant="primary" size="lg" block onClick={buttonClick}>View on a map</Button>{' '}
+                    </Card.Body>
                 </Accordion.Collapse>
             </Card>
             </Accordion>
-
-            
-
         </div>
     )
 

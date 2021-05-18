@@ -1,6 +1,6 @@
-import './App.css';
+import './App.css'
 import Main from './components/Main'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 function App() {
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

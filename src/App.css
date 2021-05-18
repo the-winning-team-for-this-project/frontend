@@ -62,6 +62,7 @@
       max-width:100%;
     }
 
+
     
 body {
   background-color: #282c34;
@@ -69,4 +70,9 @@ body {
   padding: 40px;
   font-family: Arial;
   text-align: center;
+
+.leaflet-container{
+  width: 70rem;
+  height: 30rem;
+
 }

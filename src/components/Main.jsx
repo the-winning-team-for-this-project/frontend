@@ -1,25 +1,39 @@
-import React from 'react'
-import SiteNavbar from './Navbar'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import NotFoundPage from './NotFoundPage'
 import FetchProfile from './FetchProfile'
+import NameSearch from './NameSearch'
 import RegSearch from './RegSearch'
+import SiteNavbar from './Navbar'
+import MapView from './MapView'
 
 
 const Main = () => {
-    return (
-        
+    return (  
         <>
         <SiteNavbar />
-
         <Container>
             <Router>
-                <Route path="/vehicle-search">
-                    <RegSearch/>
-                </Route>
-                <Route path="/getSuspect/:reg">
-                    <FetchProfile/>
-                </Route>
+                <Switch>
+                    <Route exact path="/">
+                        <h1>Home</h1>  
+                    </Route>
+                    <Route path="/vehicle-search">
+                        <RegSearch/>
+                    </Route>
+                    <Route path="/name-search">
+                        <NameSearch/>
+                    </Route>
+                    <Route path="/getSuspect/:reg">
+                        <FetchProfile/>
+                    </Route>
+                    <Route path="/map-view/:reg">
+                        <MapView/>
+                    </Route>
+                    <Route>
+                        <NotFoundPage/>
+                    </Route>
+                </Switch>
             </Router>
         </Container>
         </>
