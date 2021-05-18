@@ -1,8 +1,7 @@
-
-    {
+{
+  "suspect": {
     "vehicleRegistrationNo": "FK59 TDY",
     "registrationDate": "01-01-01",
-    "driverLicenceID": "1234567890",
     "make": "Ford",
     "model": "Punto",
     "colour": "Yellow",
@@ -12,18 +11,17 @@
     "dateOfBirth": "10-10-1987",
     "locations": [
       {
-    "streetName": "Camden Road, A503",
-    "latitude": "51.54978729523243",
-    "longitude": "-0.12798197853524934",
-    "timestamp": "2015-05-01T09:08:51.975"
-    },
-    
-    {
-    "streetName": "Camden Road, A503",
-    "latitude": "51.54978729523243",
-    "longitude": "-0.12798197853524934",
-    "timestamp": "2015-05-01T09:08:51.975"
-    }
-  ] 
-   }
-  
+        "streetname": "Camden Road, A503",
+        "latitude": "3",
+        "longitude": "-4",
+        "timestamp": "2015-05-01T09:08:51.975"
+      },
+      {
+        "streetname": "Camden Road, A503",
+        "latitude": "5",
+        "longitude": "-7",
+        "timestamp": "2015-05-01T09:08:51.975"
+      }
+    ]
+  }
+}
