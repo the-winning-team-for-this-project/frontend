@@ -19,6 +19,12 @@
         "latitude": 55,
         "longitude": 5,
         "timestamp": "23285-03-25657733 455:355"
+      }, 
+      {
+        "streetname": "126753 Yellow Brick Road, 24DFHGSD",
+        "latitude": 65,
+        "longitude": 30,
+        "timestamp": "23285-03-25657733 455:355"
       }
     ]
   }
