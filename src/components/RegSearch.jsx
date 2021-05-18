@@ -12,7 +12,8 @@ const RegSearch = () => {
         setRegSearch(e.target.value) 
     }
 
-    const handleClick = (e) => {
+    // test reg = ABCD 1AB
+    const handleClick = () => {
         history.push("/getSuspect/" + regSearch)
     }
 

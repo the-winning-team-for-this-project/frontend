@@ -1,10 +1,11 @@
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
+import NotFoundPage from './NotFoundPage'
 import FetchProfile from './FetchProfile'
+import NameSearch from './NameSearch'
 import RegSearch from './RegSearch'
 import SiteNavbar from './Navbar'
 import MapView from './MapView'
-import NotFoundPage from './NotFoundPage'
 
 
 const Main = () => {
@@ -15,10 +16,13 @@ const Main = () => {
             <Router>
                 <Switch>
                     <Route exact path="/">
-                        <h1>Home</h1>
+                        <h1>Home</h1>  
                     </Route>
                     <Route path="/vehicle-search">
                         <RegSearch/>
+                    </Route>
+                    <Route path="/name-search">
+                        <NameSearch/>
                     </Route>
                     <Route path="/getSuspect/:reg">
                         <FetchProfile/>
