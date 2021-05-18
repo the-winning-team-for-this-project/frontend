@@ -6,8 +6,6 @@ import { useParams } from "react-router"
 import ProfileContent from './ProfileContent'
 
 
-
-
 const FetchProfile = () => {
 
   const [profileData,setData]= useState("")
@@ -25,6 +23,7 @@ const FetchProfile = () => {
     axios.get(API_URL + "?vehicleRegistrationNo=" + reg)
       .then(res => {
       const profileJSON = res.data
+      console.log(profileJSON)
       setData(profileJSON)
       })
       .catch(err => {

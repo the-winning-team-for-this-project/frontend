@@ -4,6 +4,7 @@
     "surname": "Robertson",
     "address": "123 Yellow Brick Road, ABCD 1AB",
     "dateOfBirth": "10-10-1987",
+    "vehicleRegNo": "ABCD 1AB",
     "make": "Ford",
     "model": "Punto",
     "colour": "Yellow",
