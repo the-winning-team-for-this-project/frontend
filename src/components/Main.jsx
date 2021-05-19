@@ -5,6 +5,7 @@ import RegSearch from './RegSearch'
 import SiteNavbar from './Navbar'
 import MapView from './MapView'
 import NotFoundPage from './NotFoundPage'
+import Homepage from './Homepage'
 
 
 const Main = () => {
@@ -15,7 +16,7 @@ const Main = () => {
             <Router>
                 <Switch>
                     <Route exact path="/">
-                        <h1>Home</h1>
+                    <Homepage/>
                     </Route>
                     <Route path="/vehicle-search">
                         <RegSearch/>
