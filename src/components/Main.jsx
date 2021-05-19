@@ -5,6 +5,7 @@ import FetchProfile from './FetchProfile'
 import NameSearch from './NameSearch'
 import RegSearch from './RegSearch'
 import SiteNavbar from './Navbar'
+import Homepage from './Homepage'
 import MapView from './MapView'
 
 
@@ -16,7 +17,7 @@ const Main = () => {
             <Router>
                 <Switch>
                     <Route exact path="/">
-                        <h1>Home</h1>  
+                        <Homepage/> 
                     </Route>
                     <Route path="/vehicle-search">
                         <RegSearch/>
