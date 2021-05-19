@@ -21,7 +21,7 @@ const RegSearch = () => {
         <Jumbotron>
         <h1>Vehicle Search</h1>
         <p>
-          Search for a vehicle using a registration plate.
+          Search for a vehicle using a registration plate
         </p>
         <Form>
             <Form.Group>
