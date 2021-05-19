@@ -1,30 +1,22 @@
 .navbar {
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
 
-    :root{
-      margin:auto;
-      /*margin:50px 400px 50px 400px;*/
-      max-width:100%;
-    }
-    
-    
-    .h1{
-      text-align: center;
-      background-color:transparent;
-      color:#000;
-      font-family:Arial, Helvetica, sans-serif;
-      font-weight:300;
-      font-size:15px;
-      max-width:100%;
-    }
+.h1{
+  text-align: center;
+  background-color:transparent;
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:300;
+  font-size:15px;
+  max-width:100%;
+}
 
 
-    
+  
 body {
   background-color: #282c34;
   color: white;
-  padding: 40px;
   font-family: Arial;
   text-align: center;
 }
@@ -36,11 +28,18 @@ body {
 
 .container {
   line-height: 4;
-  text-align: center
+  text-align: center;
+  border-color: #282c34;
 }
 
 .accordion {
   font-size: 1.5rem;
+}
+
+
+.App {
+  background-color: #282c34;
+  height: 100rem;
 }
 
 .card-header:first-child {
@@ -49,6 +48,44 @@ body {
   border-bottom: 0;
 }
 
+.btn.btn-primary.btn-block.btn-lg {
+  background: #1519f1;
+  font-family: Poppins;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: #6c6ef5;
+  height: 100%;
+  width: 20%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-left: 80%;
+}
+
 .card-header {
   color: whitesmoke;
-} 
+}
+
+.jumbotron.scss {
+  background-color: #282c34;
+}
+
+.btn.btn-primary {
+  background: #1519f1;
+  font-family: Poppins;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: #6c6ef5;
+  height: 100%;
+  width: 20%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.homecontainer {
+  background-color: #e9ecef;
+  line-height: 4;
+  text-align: center;
+  border-color: #282c34;
+  border-radius: .3rem;
+  margin-bottom: 2rem;
+  padding: 4rem 2rem;
+
+}
