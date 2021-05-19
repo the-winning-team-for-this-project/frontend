@@ -1,10 +1,10 @@
 import React from 'react'
-import Container from '@material-ui/core/Container'
+import { Container } from 'react-bootstrap'
 
 const Homepage = () => {
     return (
         <Container className='homecontainer'>
-        <h1>Search for Suspect Information</h1>
+        <h1><strong>Search for Suspect Information</strong></h1>
         <br />
         <h2>Direct to search using the Navigation Bar at the top of this page. 
             Input known suspect information.
