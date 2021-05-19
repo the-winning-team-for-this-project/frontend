@@ -16,12 +16,12 @@ const FetchProfile = () => {
 
 
   //  change to real endpoint url
-  const API_URL = "http://localhost:5000/suspect/"
+  const API_URL = "http://34.241.2.97:8080/getSuspect/"
 
   useEffect(() => {
     const getProfileData = () => {
 
-    axios.get(API_URL + "?vehicleRegistrationNo=" + reg)
+    axios.get(API_URL + reg, { crossdomain: true })
       .then(res => {
       const profileJSON = res.data
       console.log(profileJSON)
