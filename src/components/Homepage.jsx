@@ -46,11 +46,14 @@ const Homepage = () => {
 //         </Container>
 
 <div className="Boxy">
-    <h1>Hello</h1>
     <div className="grids">
-        <div className="boxes">1</div>
-        <div className="boxes">1</div>
+        <div className="boxes">
+            <h1>Hello</h1>
+        </div>
+        <div data-aos="flip-left" className="boxes">1</div>
         <div data-aos="fade-up" className="boxes">1</div>
+        <div data-aos="fade-left" className="boxes">1</div>
+        <div data-aos="fade-right" className="boxes">1</div>
     </div>
 </div>
         
