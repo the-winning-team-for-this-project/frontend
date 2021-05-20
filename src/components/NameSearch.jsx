@@ -27,7 +27,7 @@ const NameSearch = () => {
         <Jumbotron>
         <h1>Person Search</h1>
         <p>
-          Search for a person's name.
+          Search using name of person
         </p>
         <Form>
             <Form.Row>
