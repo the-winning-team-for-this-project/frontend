@@ -1,25 +1,14 @@
 import { Form, Button, Jumbotron, Col } from 'react-bootstrap'
-import { useHistory } from 'react-router-dom'
-import { useState } from 'react'
 
-const NameSearch = () => {
 
-    const [forenameSearch, setForenameSearch] = useState("")
-    const [surnameSearch, setSurnameSearch] = useState("")
-    const history = useHistory()
+const NameSearch = (props) => {
+    
+    const handleSNSubmit = (e) => {
+        e.preventDefault()
+    }
 
     const handleFNSubmit = (e) => {
         e.preventDefault()
-        setForenameSearch(e.target.value) 
-    }
-
-    const handleSNSubmit = (e) => {
-        e.preventDefault()
-        setSurnameSearch(e.target.value) 
-    }
-
-    const handleClick = () => {
-        history.push("/getSuspect/" + forenameSearch + " " + surnameSearch)
     }
 
     return (
@@ -32,13 +21,13 @@ const NameSearch = () => {
         <Form>
             <Form.Row>
                 <Col>
-                    <Form.Control required size="lg" type="text" placeholder="Enter forename here" value={forenameSearch} onChange={(e)=>handleFNSubmit(e)}/>
+                    <Form.Control required size="lg" type="text" placeholder="Enter forename here" value={props.forename} onChange={(e)=>handleFNSubmit(e)}/>
                 </Col>
                 <Col>               
-                    <Form.Control required size="lg" type="text" placeholder="Enter surname here" value={surnameSearch} onChange={(e)=>handleSNSubmit(e)}/>
+                    <Form.Control required size="lg" type="text" placeholder="Enter surname here" value={props.surname} onChange={(e)=>handleSNSubmit(e)}/>
                 </Col>
             </Form.Row>
-            <Button type="button" onClick={handleClick}>Submit</Button>
+            <Button type="button" onClick={props.handleClick}>Submit</Button>
         </Form>  
         </Jumbotron>       
         </>
