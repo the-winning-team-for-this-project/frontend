@@ -14,7 +14,7 @@ const Homepage = () => {
         <div className="boxes">
             <h1>
                 <br />
-                Welcome
+               <strong> Welcome </strong>
                  </h1>
                  <br />
                  <h3>
@@ -25,7 +25,7 @@ const Homepage = () => {
      <h4>
      <br />
      <br />
-        How to use:
+        <strong>How to use: </strong>
              <br />
             <br />
         Direct to vehicle or name search using the Navigation Bar at the top of this page 
@@ -42,7 +42,7 @@ const Homepage = () => {
             <h4>
             <br />
                 <br />
-                Application created by:
+               <strong> Application created by:</strong>
                 <br />
                 <br />
                 Cara Prestwich
