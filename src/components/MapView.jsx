@@ -1,11 +1,8 @@
 import {useState, useEffect} from 'react'
-import { useParams } from "react-router"
-
+import {useParams} from "react-router"
+import {api_url} from './constants.json'
 import axios from 'axios'
-
 import Map from './Map'
-
-// test reg = ABCD 1AB
 
 const MapView = () => {
 
@@ -13,12 +10,10 @@ const MapView = () => {
     const reg = params.reg
     const [profileData,setData]= useState("")
     
-    // future improvements would be to have an offline map (limited by amounts of data) as can see exactly what tile of map is being looked at
-    const API_URL = "http://34.241.2.97:8080/getSuspect/"
     useEffect(() => {
+
         const getProfileData = () => {
-    
-        axios.get(API_URL + reg)
+        axios.get(`${api_url}/${reg}`)
           .then(res => {
           const profileJSON = res.data
           setData(profileJSON)
@@ -26,8 +21,8 @@ const MapView = () => {
           .catch(err => console.log(err))
         }
         getProfileData()
-
         }, [])
+
     return (
         <div>
             {profileData && 
