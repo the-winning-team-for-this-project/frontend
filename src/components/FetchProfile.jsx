@@ -1,9 +1,9 @@
-
 import { useHistory } from 'react-router-dom'
 import axios from 'axios'
 import {useState, useEffect} from 'react'
 import { useParams } from "react-router"
 import ProfileContent from './ProfileContent'
+import {api_url} from './constants.json'
 
 
 const FetchProfile = () => {
@@ -14,14 +14,10 @@ const FetchProfile = () => {
   const reg = params.reg
 
 
-
-  //  change to real endpoint url
-  const API_URL = "http://localhost:5000/suspect/"
-
   useEffect(() => {
-    const getProfileData = () => {
 
-    axios.get(API_URL + "?vehicleRegistrationNo=" + reg)
+    const getProfileData = () => {
+    axios.get(`${api_url}/${reg}`)
       .then(res => {
       const profileJSON = res.data
       console.log(profileJSON)

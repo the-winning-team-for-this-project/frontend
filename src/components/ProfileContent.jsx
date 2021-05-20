@@ -11,8 +11,6 @@ const ProfileContent = ({ profileData, buttonClick }) => {
         )
     })
 
-
-
     return (
         <div>
             <Accordion defaultActiveKey="0">
