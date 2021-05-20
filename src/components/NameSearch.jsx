@@ -1,15 +1,21 @@
 import { Form, Button, Jumbotron, Col } from 'react-bootstrap'
 
 
-const NameSearch = (props) => {
+const NameSearch = () => {
     
     const handleSNSubmit = (e) => {
         e.preventDefault()
+        setSurnameSearch(surname.value) 
     }
 
     const handleFNSubmit = (e) => {
         e.preventDefault()
+        setForenameSearch(forename.value)
     }
+
+    const [forenameSearch, setForenameSearch] = useState("")
+    const [surnameSearch, setSurnameSearch] = useState("")
+
 
     return (
         <>

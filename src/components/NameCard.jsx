@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 const NameCard = () => {
     const [person, setPerson] = useState({})
@@ -13,7 +13,7 @@ const NameCard = () => {
                 {`Date of Birth: ${person.dateOfBirth}`}
             </p>
         </>
-    );
+    )
 }
 
 export default NameCard
