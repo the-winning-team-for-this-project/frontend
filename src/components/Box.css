@@ -1,15 +1,60 @@
 .boxes{
     margin: 20px;
     margin-top:  100px;
-    background-color: rgb(213, 190, 235);
+    background-color: rgb(231, 227, 235);
     overflow: hidden;
     height: 600px;
     max-height: 60vh;
     box-shadow: 0px 12px 18px -6px black;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 5px;
 }
 
 .grids {
     max-width: 90%;
     margin: auto;
 }
+
+.b1 {
+        margin: 20px;
+    margin-top:  100px;
+    background-color: rgb(231, 227, 235);
+    overflow: hidden;
+    height: 600px;
+    max-height: 60vh;
+    box-shadow: 0px 12px 18px -6px black;
+    border-radius: 5px;
+}
+
+.b2 {
+    margin: 20px;
+margin-top:  100px;
+background-color: rgba(231, 227, 235, 0.849);
+overflow: hidden;
+height: 600px;
+max-height: 60vh;
+box-shadow: 0px 12px 18px -6px black;
+border-radius: 5px;
+}
+
+.b3 {
+    margin: 20px;
+margin-top:  100px;
+background-color: rgba(231, 227, 235, 0.705);
+overflow: hidden;
+height: 600px;
+max-height: 60vh;
+box-shadow: 0px 12px 18px -6px black;
+border-radius: 5px;
+}
+
+.b4 {
+    margin: 20px;
+margin-top:  100px;
+background-color: rgba(231, 227, 235, 0.562);
+overflow: hidden;
+height: 600px;
+max-height: 60vh;
+box-shadow: 0px 12px 18px -6px black;
+border-radius: 5px;
+}
+

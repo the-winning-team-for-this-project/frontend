@@ -48,12 +48,28 @@ const Homepage = () => {
 <div className="Boxy">
     <div className="grids">
         <div className="boxes">
-            <h1>Hello</h1>
+            <h1>
+                <br />
+                Hello
+                 </h1>
         </div>
-        <div data-aos="flip-left" className="boxes">1</div>
-        <div data-aos="fade-up" className="boxes">1</div>
-        <div data-aos="fade-left" className="boxes">1</div>
-        <div data-aos="fade-right" className="boxes">1</div>
+        <div data-aos="flip-left" className="boxes" className="b1">
+     <h3>
+     <br />
+            <br />
+        Direct to search using the Navigation Bar at the top of this page. 
+             <br />
+            <br />
+             Input known information.
+             <br />
+             <br />
+             You will then be redirected to a page containing further information on that person.
+            
+         </h3>
+        </div>
+        <div data-aos="fade-up" className="boxes" className="b2">info</div>
+        <div data-aos="fade-left" className="boxes" className="b3">info</div>
+        <div data-aos="fade-right" className="boxes" className="b4">info</div>
     </div>
 </div>
         
