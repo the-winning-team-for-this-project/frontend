@@ -18,7 +18,7 @@ const Homepage = () => {
                  </h1>
                  <br />
                  <h3>
-                     This application can be used to search for person's of interest using name or vehicle registration details
+                     This application can be used to search for persons of interest using name or vehicle registration details
                  </h3>
                  <br />
                  <h5>
