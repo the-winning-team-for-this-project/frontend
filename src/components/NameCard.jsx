@@ -6,7 +6,7 @@ const NameCard = ({match}) => {
     const history = useHistory()
 
     const takeMeToYourLeader = () => {
-        history.push(/getSuspect/ + match.id) 
+        history.push(/getSuspect/ + match.bankAccountId) 
     }
 
     return (

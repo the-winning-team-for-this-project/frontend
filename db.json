@@ -79,19 +79,19 @@
   },
   "names": [
     {
-      "id": 1,
+      "bankAccountId": 1,
       "forename": "robert",
       "surname": "bobertson",
       "dateOfBirth": "10-12-2010"
     },
     {
-      "id": 66,
+      "bankAccountId": 66,
       "forename": "robert",
       "surname": "bobertson",
       "dateOfBirth": "20-12-1400"
     },
     {
-      "id": 44,
+      "bankAccountId": 44,
       "forename": "robert",
       "surname": "bobertson",
       "dateOfBirth": "12-09-1878"
