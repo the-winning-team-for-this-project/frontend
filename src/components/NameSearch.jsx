@@ -11,7 +11,7 @@ const NameSearch = () => {
     forename: "",
     surname: ""
   })
-
+  
   const handle = (e) => {
     const nameInput={...name}
     nameInput[e.target.id] = e.target.value
@@ -29,7 +29,7 @@ const NameSearch = () => {
       .then(res => {
         const data = res.data
         setMatches(data)
-        console.log({nameMatches})
+        console.log(nameMatches)
         })
       .catch(err => console.log(err))
   }
@@ -39,8 +39,6 @@ const NameSearch = () => {
       <NameCard match={match}/>
     );
   });
-
-
 
   return (
     <>
@@ -52,9 +50,7 @@ const NameSearch = () => {
       <NameSearchForm handle={handle} clickio={clickio}/>
     </Jumbotron> 
     <CardDeck>    
-        
         {peopleCards}
-
     </CardDeck>          
     </>
   )
