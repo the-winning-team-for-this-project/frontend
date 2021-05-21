@@ -13,17 +13,6 @@
   max-width:100%;
 }
 
-.jumone{
-  background: #e9ecef !important;
-}
-
-.jumtwo{
-  background-color: #d5d5fc !important;
-}
-
-.jumthree{
-  background-color: white !important;
-}
   
 body {
   background-color: #282c34;
@@ -40,6 +29,7 @@ body {
   line-height: 4;
   text-align: center;
   border-color: #282c34;
+  
 }
 
 .accordion {
@@ -74,8 +64,8 @@ body {
   color: whitesmoke;
 }
 
-.jumbotron.scss {
-  background-color: #282c34;
+.jumbotron {
+  background-color: rgb(231, 227, 235) !important;
 }
 
 .btn.btn-primary {
@@ -87,17 +77,6 @@ body {
   height: 100%;
   width: 20%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.homecontainer {
-  background-color: #e9ecef;
-  line-height: 4;
-  text-align: center;
-  border-color: #282c34;
-  border-radius: .3rem;
-  margin-bottom: 2rem;
-  padding: 4rem 2rem;
-
 }
 
 
