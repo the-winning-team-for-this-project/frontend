@@ -23,5 +23,79 @@
         "timestamp": "2015-05-01T09:08:51.975"
       }
     ]
-  }
+  },
+  "bankData": {
+    "bankCardNumber": "789987",
+    "bankAccountNumber": "45345346",
+    "EPOSData": [
+      {
+        "streetname": "Uptown, A511",
+        "latitude": "3",
+        "longitude": "-4",
+        "timestamp": "2002-01-01T09:08:51.975"
+      },
+      {
+        "streetname": "Downtown, FD03",
+        "latitude": "5",
+        "longitude": "-7",
+        "timestamp": "2015-05-01T09:08:51.665"
+      }
+    ],
+    "ATMData": [
+      {
+        "streetname": "Leftown, B611",
+        "latitude": "3",
+        "longitude": "-4",
+        "timestamp": "2002-4-01T09:08:51.975",
+        "amount": "6000000000"
+      },
+      {
+        "streetname": "Righttown, FB73",
+        "latitude": "8",
+        "longitude": "-3",
+        "timestamp": "2015-01-01T09:12:51.665",
+        "amount": "0.003"
+      }
+    ]
+  },
+  "cellData": {
+    "phoneNumber": "0808048534",
+    "celltowerData": [
+      {
+        "streetname": "Leftown, B611",
+        "latitude": "3",
+        "longitude": "-4",
+        "timestamp": "2002-4-01T09:08:51.975",
+        "amount": "6000000000"
+      }
+    ],
+    "callRecords": [
+      {
+        "timestamp": "345345-4535",
+        "caller": "jimbob",
+        "reciever": "bobjim"
+      }
+    ]
+  },
+  "names": [
+    {
+      "id": 1,
+      "forename": "robert",
+      "surname": "bobertson",
+      "dateOfBirth": "10-12-2010"
+    },
+    {
+      "id": 66,
+      "forename": "robert",
+      "surname": "bobertson",
+      "dateOfBirth": "20-12-1400"
+    },
+    {
+      "id": 44,
+      "forename": "robert",
+      "surname": "bobertson",
+      "dateOfBirth": "12-09-1878"
+    }
+
+  ]
 }
