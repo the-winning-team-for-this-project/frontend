@@ -2,6 +2,10 @@ import { Form, Button, Jumbotron } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
 import { useState } from 'react'
 
+
+// for json-server: "http://localhost:5000/suspect/?vehicleRegistrationNo="
+// test reg = ABCD 1AB
+
 const RegSearch = () => {
 
     const [regSearch, setRegSearch] = useState("")
@@ -12,7 +16,7 @@ const RegSearch = () => {
         setRegSearch(e.target.value) 
     }
 
-    // test reg = ABCD 1AB
+    
     const handleClick = () => {
         history.push(/getSuspect/ + regSearch)
     }

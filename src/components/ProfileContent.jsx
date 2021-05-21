@@ -23,10 +23,10 @@ const ProfileContent = ({ profileData, buttonClick }) => {
                     <Accordion.Collapse eventKey="0">
                         <Card.Body>
                             <ListGroup>
-                                <ListGroup.Item><b>Registration Number:</b> {profileData.vehicleRegistrationNo}</ListGroup.Item>
-                                <ListGroup.Item><b>Make:</b> {profileData.make}</ListGroup.Item>
-                                <ListGroup.Item><b>Model:</b> {profileData.model}</ListGroup.Item>
-                                <ListGroup.Item><b>Colour:</b> {profileData.colour}</ListGroup.Item>
+                                <ListGroup.Item><b>Registration Number:</b> {profileData.suspect.vehicleRegistrationNo}</ListGroup.Item>
+                                <ListGroup.Item><b>Make:</b> {profileData.suspect.make}</ListGroup.Item>
+                                <ListGroup.Item><b>Model:</b> {profileData.suspect.model}</ListGroup.Item>
+                                <ListGroup.Item><b>Colour:</b> {profileData.suspect.colour}</ListGroup.Item>
 
                             </ListGroup>
                         </Card.Body>
@@ -41,10 +41,10 @@ const ProfileContent = ({ profileData, buttonClick }) => {
                     <Accordion.Collapse eventKey="1">
                         <Card.Body>
                             <ListGroup>
-                                <ListGroup.Item><b>Forename(s):</b> {profileData.forenames}</ListGroup.Item>
-                                <ListGroup.Item><b>Surname: </b>{profileData.surname}</ListGroup.Item>
-                                <ListGroup.Item><b>Address:</b> {profileData.address}</ListGroup.Item>
-                                <ListGroup.Item><b>Date of Birth:</b> {profileData.dateOfBirth}</ListGroup.Item>
+                                <ListGroup.Item><b>Forename(s):</b> {profileData.suspect.forenames}</ListGroup.Item>
+                                <ListGroup.Item><b>Surname: </b>{profileData.suspect.surname}</ListGroup.Item>
+                                <ListGroup.Item><b>Address:</b> {profileData.suspect.address}</ListGroup.Item>
+                                <ListGroup.Item><b>Date of Birth:</b> {profileData.suspect.dateOfBirth}</ListGroup.Item>
                             </ListGroup>
                         </Card.Body>
                     </Accordion.Collapse>
