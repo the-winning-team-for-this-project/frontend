@@ -34,8 +34,8 @@ const FetchProfile = () => {
 
     const buttonClick = () => {
       history.push("/map-view/" + reg)
-      
-  }
+    }
+    
     return (
       <>
         {profileData && 
