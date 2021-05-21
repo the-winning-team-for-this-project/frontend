@@ -34,12 +34,13 @@ const NameSearch = () => {
       .catch(err => console.log(err))
   }
 
-  const PeopleCards = nameMatches.map((match) => {
+  const peopleCards = nameMatches.map((match) => {
     return (
-
       <NameCard match={match}/>
     );
   });
+
+
 
   return (
     <>
@@ -50,8 +51,8 @@ const NameSearch = () => {
       </p>
       <NameSearchForm handle={handle} clickio={clickio}/>
     </Jumbotron> 
-    <CardDeck> 
-      {PeopleCards}   
+    <CardDeck>    
+        {peopleCards}  
     </CardDeck>          
     </>
   )
