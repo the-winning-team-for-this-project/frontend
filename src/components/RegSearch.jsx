@@ -14,7 +14,7 @@ const RegSearch = () => {
 
     // test reg = ABCD 1AB
     const handleClick = () => {
-        history.push(/getSuspect/ + regSearch)
+        history.push(/get-person/ + regSearch)
     }
 
     return (

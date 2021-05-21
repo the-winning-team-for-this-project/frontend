@@ -1,4 +1,4 @@
-import { Jumbotron, CardDeck } from 'react-bootstrap'
+import { Jumbotron, CardDeck, Card } from 'react-bootstrap'
 import NameSearchForm from './NameSearchForm'
 import NameCard from './NameCard'
 import { useState } from 'react'
@@ -20,7 +20,6 @@ const NameSearch = () => {
 
   const clickio = (e) => {
     e.preventDefault()
-    console.log({name})
     getMatchingNames()
   }
 
@@ -28,7 +27,8 @@ const NameSearch = () => {
     axios.get("http://localhost:5000/names/")
     // send in name to the get req
       .then(res => {
-        setMatches(res.data)
+        const data = res.data
+        setMatches(data)
         console.log({nameMatches})
         })
       .catch(err => console.log(err))
@@ -52,7 +52,9 @@ const NameSearch = () => {
       <NameSearchForm handle={handle} clickio={clickio}/>
     </Jumbotron> 
     <CardDeck>    
-        {peopleCards}  
+        
+        {peopleCards}
+
     </CardDeck>          
     </>
   )

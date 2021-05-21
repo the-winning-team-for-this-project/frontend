@@ -25,7 +25,10 @@ const Main = () => {
                     <Route path="/name-search">
                         <NameSearch/>
                     </Route>
-                    <Route path="/getSuspect/:reg">
+                    <Route path="/get-person/:reg">
+                        <FetchProfile/>
+                    </Route>
+                    <Route path="/details/:id">
                         <FetchProfile/>
                     </Route>
                     <Route path="/map-view/:reg">

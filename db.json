@@ -25,6 +25,7 @@
     ]
   },
   "bankData": {
+    "bankAccountId": 1,
     "bankCardNumber": "789987",
     "bankAccountNumber": "45345346",
     "EPOSData": [
