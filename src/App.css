@@ -99,3 +99,8 @@ body {
   padding: 4rem 2rem;
 
 }
+
+
+.table.table-sm.table-striped.table-bordered.table-hover {
+  font-size: 14px !important;
+}
