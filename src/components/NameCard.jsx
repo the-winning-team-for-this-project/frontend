@@ -1,17 +1,18 @@
-import { useState } from 'react'
+import { Card} from 'react-bootstrap'
 
-const NameCard = () => {
-    const [person, setPerson] = useState({})
-
+const NameCard = ({match}) => {
 
     return (
         <>
-            <h1>
-                {person.forename} {person.surname}
-            </h1>
-            <p>
-                {`Date of Birth: ${person.dateOfBirth}`}
-            </p>
+        <Card border="info" style={{ width: '18rem' }}>
+            <Card.Header>{match.forename} {match.surname}</Card.Header>
+            <Card.Body>
+                <Card.Title>DOB</Card.Title>
+                <Card.Text>
+                    {match.dateOfBirth} 
+                </Card.Text>
+            </Card.Body>
+        </Card>
         </>
     )
 }

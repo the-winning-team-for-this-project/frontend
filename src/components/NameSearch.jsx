@@ -1,43 +1,59 @@
-import { Form, Button, Jumbotron, Col } from 'react-bootstrap'
-
+import { Jumbotron, CardDeck } from 'react-bootstrap'
+import NameSearchForm from './NameSearchForm'
+import NameCard from './NameCard'
+import { useState } from 'react'
+import axios from 'axios'
 
 const NameSearch = () => {
-    
-    const handleSNSubmit = (e) => {
-        e.preventDefault()
-        setSurnameSearch(surname.value) 
-    }
 
-    const handleFNSubmit = (e) => {
-        e.preventDefault()
-        setForenameSearch(forename.value)
-    }
+  const [nameMatches, setMatches] = useState([])
+  const [name, setName] = useState({
+    forename: "",
+    surname: ""
+  })
 
-    const [forenameSearch, setForenameSearch] = useState("")
-    const [surnameSearch, setSurnameSearch] = useState("")
+  const handle = (e) => {
+    const nameInput={...name}
+    nameInput[e.target.id] = e.target.value
+    setName(nameInput)
+  }
 
+  const clickio = (e) => {
+    e.preventDefault()
+    console.log({name})
+    getMatchingNames()
+  }
 
+  const getMatchingNames = () => {
+    axios.get("http://localhost:5000/names/")
+    // send in name to the get req
+      .then(res => {
+        setMatches(res.data)
+        console.log({nameMatches})
+        })
+      .catch(err => console.log(err))
+  }
+
+  const PeopleCards = nameMatches.map((match) => {
     return (
-        <>
-        <Jumbotron>
-        <h1>Person Search</h1>
-        <p>
-          Search for a person's name.
-        </p>
-        <Form>
-            <Form.Row>
-                <Col>
-                    <Form.Control required size="lg" type="text" placeholder="Enter forename here" value={props.forename} onChange={(e)=>handleFNSubmit(e)}/>
-                </Col>
-                <Col>               
-                    <Form.Control required size="lg" type="text" placeholder="Enter surname here" value={props.surname} onChange={(e)=>handleSNSubmit(e)}/>
-                </Col>
-            </Form.Row>
-            <Button type="button" onClick={props.handleClick}>Submit</Button>
-        </Form>  
-        </Jumbotron>       
-        </>
-    )
+      <NameCard match={match}/>
+    );
+  });
+
+  return (
+    <>
+    <Jumbotron>
+      <h1>Person Search</h1>
+      <p>
+        Search for a person's name.
+      </p>
+      <NameSearchForm handle={handle} clickio={clickio}/>
+    </Jumbotron> 
+    <CardDeck> 
+      {PeopleCards}   
+    </CardDeck>          
+    </>
+  )
 }
 
 export default NameSearch

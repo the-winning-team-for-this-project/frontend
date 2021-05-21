@@ -24,7 +24,6 @@
       }
     ]
   },
-
   "bankData": {
     "bankCardNumber": "789987",
     "bankAccountNumber": "45345346",
@@ -59,7 +58,6 @@
       }
     ]
   },
-
   "cellData": {
     "phoneNumber": "0808048534",
     "celltowerData": [
@@ -78,8 +76,26 @@
         "reciever": "bobjim"
       }
     ]
-  }
+  },
+  "names": [
+    {
+      "id": 1,
+      "forename": "robert",
+      "surname": "bobertson",
+      "dateOfBirth": "10-12-2010"
+    },
+    {
+      "id": 66,
+      "forename": "robert",
+      "surname": "bobertson",
+      "dateOfBirth": "20-12-1400"
+    },
+    {
+      "id": 44,
+      "forename": "robert",
+      "surname": "bobertson",
+      "dateOfBirth": "12-09-1878"
+    }
+
+  ]
 }
-      
-
-
