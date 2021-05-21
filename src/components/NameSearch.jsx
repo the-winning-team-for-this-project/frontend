@@ -36,6 +36,7 @@ const NameSearch = () => {
 
   const PeopleCards = nameMatches.map((match) => {
     return (
+
       <NameCard match={match}/>
     );
   });

@@ -1,79 +1,101 @@
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-     .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      
-    }
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .navbar {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
-    :root{
-      margin:auto;
-      /*margin:50px 400px 50px 400px;*/
-      max-width:100%;
-    }
-    
-    
-    .h1{
-      text-align: center;
-      background-color:transparent;
-      color:#000;
-      font-family:Arial, Helvetica, sans-serif;
-      font-weight:300;
-      font-size:15px;
-      max-width:100%;
-    }
 
+.h1{
+  text-align: center;
+  background-color:transparent;
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:300;
+  font-size:15px;
+  max-width:100%;
+}
 
-    
+.jumone{
+  background: #e9ecef !important;
+}
+
+.jumtwo{
+  background-color: #d5d5fc !important;
+}
+
+.jumthree{
+  background-color: white !important;
+}
+  
 body {
   background-color: #282c34;
   color: white;
-  padding: 40px;
-  font-family: Arial;
   text-align: center;
 }
 
 .leaflet-container{
   width: 70rem;
   height: 30rem;
+}
+
+.container {
+  line-height: 4;
+  text-align: center;
+  border-color: #282c34;
+}
+
+.accordion {
+  font-size: 1.5rem;
+}
+
+
+.App {
+  background-color: #282c34;
+  height: 100rem;
+}
+
+.card-header:first-child {
+  background-color: #282c34;
+  border-radius: 15px 50px 30px 5px;
+  border-bottom: 0;
+}
+
+.btn.btn-primary.btn-block.btn-lg {
+  background: #1519f1;
+  font-family: Poppins;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: #6c6ef5;
+  height: 100%;
+  width: 20%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-left: 80%;
+}
+
+.card-header {
+  color: whitesmoke;
+}
+
+.jumbotron.scss {
+  background-color: #282c34;
+}
+
+.btn.btn-primary {
+  background: #1519f1;
+  font-family: Poppins;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: #6c6ef5;
+  height: 100%;
+  width: 20%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.homecontainer {
+  background-color: #e9ecef;
+  line-height: 4;
+  text-align: center;
+  border-color: #282c34;
+  border-radius: .3rem;
+  margin-bottom: 2rem;
+  padding: 4rem 2rem;
 
 }
