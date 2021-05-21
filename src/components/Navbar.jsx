@@ -12,7 +12,7 @@ const SiteNavbar = () => {
             <Nav className="mr-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/vehicle-search">Vehicle Search</Nav.Link>
-              <Nav.Link href="/name-search">Name Search</Nav.Link>
+              {/* <Nav.Link href="/name-search">Name Search</Nav.Link> */}
             </Nav>
 
           </Navbar.Collapse>
