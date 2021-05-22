@@ -15,6 +15,10 @@ const NameCard = ({match}) => {
                 <Card.Header><h2>{match.forename} {match.surname}</h2></Card.Header>
                 <Card.Body>
                     <Card.Title>Date of Birth: {match.dateOfBirth} </Card.Title>
+                    <Card.Text>
+                        Home address: {match.homeAddress}
+                    </Card.Text>
+
                 </Card.Body>
             </Card>
 
