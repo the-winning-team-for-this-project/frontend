@@ -12,7 +12,7 @@ const RegSearch = () => {
         setRegSearch(e.target.value) 
     }
 
-    // test reg = ABCD 1AB
+    // test reg = FK59 TDY
     const handleClick = () => {
         history.push(/get-person/ + regSearch)
     }
