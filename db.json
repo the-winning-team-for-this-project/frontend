@@ -10,10 +10,11 @@
     "address": "123 Yellow Brick Road, ABCD 1AB",
     "dateOfBirth": "10-10-1987",
     "locations": [
+  
       {
         "streetname": "Camden Road, A503",
-        "latitude": "3",
-        "longitude": "-4",
+        "latitude": "-5",
+        "longitude": "-8",
         "timestamp": "2015-05-01T09:08:51.975"
       },
       {
