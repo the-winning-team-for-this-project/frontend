@@ -1,4 +1,4 @@
-import { Jumbotron, CardDeck } from 'react-bootstrap'
+import { Jumbotron, CardDeck, Card } from 'react-bootstrap'
 import NameSearchForm from './NameSearchForm'
 import NameCard from './NameCard'
 import { useState } from 'react'
@@ -11,7 +11,7 @@ const NameSearch = () => {
     forename: "",
     surname: ""
   })
-
+  
   const handle = (e) => {
     const nameInput={...name}
     nameInput[e.target.id] = e.target.value
@@ -20,7 +20,6 @@ const NameSearch = () => {
 
   const clickio = (e) => {
     e.preventDefault()
-    console.log({name})
     getMatchingNames()
   }
   
@@ -30,8 +29,9 @@ const NameSearch = () => {
       surname: name.surname
     })
       .then(res => {
-        setMatches(res.data)
-        console.log({nameMatches})
+        const data = res.data
+        setMatches(data)
+        console.log(nameMatches)
         })
       .catch(err => console.log(err))
   }
@@ -41,8 +41,6 @@ const NameSearch = () => {
       <NameCard match={match}/>
     );
   });
-
-
 
   return (
     <>
@@ -54,7 +52,7 @@ const NameSearch = () => {
       <NameSearchForm handle={handle} clickio={clickio}/>
     </Jumbotron> 
     <CardDeck>    
-        {peopleCards}  
+        {peopleCards}
     </CardDeck>          
     </>
   )
