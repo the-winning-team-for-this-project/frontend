@@ -1,4 +1,4 @@
-import { Jumbotron, CardDeck } from 'react-bootstrap'
+import { Jumbotron, CardDeck, Card } from 'react-bootstrap'
 import NameSearchForm from './NameSearchForm'
 import {api_url} from './constants.json'
 import NameCard from './NameCard'
@@ -25,9 +25,9 @@ const NameSearch = () => {
   }
   
   const getMatchingNames = () => {
-    axios.get(`${api_url}getSuspectList/`, {
-      forenames: name.forename,
-      surname: name.surname
+    axios.post(`${api_url}getSuspectList/`, {
+      "forenames": name.forename,
+      "surname": name.surname
     })
       .then(res => {
         const data = res.data

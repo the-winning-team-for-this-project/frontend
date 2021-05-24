@@ -29,7 +29,7 @@ const Main = () => {
                     <Route path="/get-person/:reg">
                         <FetchProfile/>
                     </Route>
-                    <Route path="/details/:id">
+                    <Route path="/details/:bId">
                         <FetchBankDeets/>
                     </Route>
                     <Route path="/map-view/:reg">

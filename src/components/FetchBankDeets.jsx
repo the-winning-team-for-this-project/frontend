@@ -15,8 +15,7 @@ const FetchBankDeets = () => {
   useEffect(() => {
 
     const getData = () => {
-    //axios.get(`${api_url}/getBackground/${bId}`)
-    axios.get(`${api_url}getBackground/738923`)
+    axios.get(`${api_url}getBackground/${bId}`)
       .then(res => {
       const dataJSON = res.data
       console.log(dataJSON)
