@@ -1,7 +1,6 @@
 import { useHistory } from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import { useParams } from 'react-router'
-import {api_url} from './constants.json'
 import BankDeets from './BankDeets'
 import axios from 'axios'
 
@@ -15,7 +14,8 @@ const FetchBankDeets = () => {
   useEffect(() => {
 
     const getData = () => {
-    axios.get(`${api_url}getBackground/${bId}`)
+      
+    axios.get(`http://localhost:5000/getBackground`)
       .then(res => {
       const dataJSON = res.data
       console.log(dataJSON)

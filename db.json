@@ -1,105 +1,90 @@
 {
   "suspect": {
-    "vehicleRegistrationNo": "FK59 TDY",
-    "registrationDate": "01-01-01",
-    "make": "Ford",
-    "model": "Punto",
-    "colour": "Yellow",
-    "forenames": "Karen",
-    "surname": "Robertson",
-    "address": "123 Yellow Brick Road, ABCD 1AB",
-    "dateOfBirth": "10-10-1987",
+    "suspect": {
+      "vehicleRegistrationNo": "FK59 TDY",
+      "forenames": "Robert",
+      "surname": "Bobertson",
+      "address": "123 Yellow Brick Road, ABCD 1AB",
+      "dateOfBirth": "1966-11-11",
+      "make": "Fiat",
+      "model": "Punto",
+      "colour": "yello"
+    },
     "locations": [
+      {
+        "streetName": "Camden Road, A503",
+        "latitude": 51.48799,
+        "longitude": -2.48778,
+        "timestamp": "2001-01-01T09:01:11.666"
+      },
+      {
+        "streetName": "Camden Road, A503",
+        "latitude": 51.4444,
+        "longitude": -2.4999,
+        "timestamp": "2001-01-01T09:01:11.666"
+      }
+    ]
+  },
   
-      {
-        "streetname": "Camden Road, A503",
-        "latitude": "-5",
-        "longitude": "-8",
-        "timestamp": "2015-05-01T09:08:51.975"
-      },
-      {
-        "streetname": "Camden Road, A503",
-        "latitude": "5",
-        "longitude": "-7",
-        "timestamp": "2015-05-01T09:08:51.975"
-      }
-    ]
+  "getBackground": {
+    "suspect": {
+      "forenames": "Bob",
+      "surname": "Bobertson",
+      "dateOfBirth": "1999-99-99",
+      "homeAddress": "A PLACE",
+      "accountNumber": "222222",
+      "bank": "A BANK"
   },
-  "bankData": {
-    "bankAccountId": 1,
-    "bankCardNumber": "789987",
-    "bankAccountNumber": "45345346",
-    "EPOSData": [
+  "bankCards": [
       {
-        "streetname": "Uptown, A511",
-        "latitude": "3",
-        "longitude": "-4",
-        "timestamp": "2002-01-01T09:08:51.975"
-      },
-      {
-        "streetname": "Downtown, FD03",
-        "latitude": "5",
-        "longitude": "-7",
-        "timestamp": "2015-05-01T09:08:51.665"
+          "bankCardNumber": "444444444444444",
+          "bankAccountNumber": "3333333"
       }
-    ],
-    "ATMData": [
+  ],
+  "atmTransactions": [
       {
-        "streetname": "Leftown, B611",
-        "latitude": "3",
-        "longitude": "-4",
-        "timestamp": "2002-4-01T09:08:51.975",
-        "amount": "6000000000"
-      },
-      {
-        "streetname": "Righttown, FB73",
-        "latitude": "8",
-        "longitude": "-3",
-        "timestamp": "2015-01-01T09:12:51.665",
-        "amount": "0.003"
+          "atmOperator": "The Bank",
+          "atmStreetName": "A Street",
+          "atmPostcode": "AAA1 1AA",
+          "atmLatitude": 52,
+          "atmLongitude": -0.1,
+          "atmTimestamp": "2111-11-1111:51:47",
+          "bankCardNumber": "888888888888888",
+          "atmType": "Cash Withdrawal",
+          "atmAmount": 8000000.0
       }
-    ]
-  },
-  "cellData": {
-    "phoneNumber": "0808048534",
-    "celltowerData": [
+  ],
+  "eposTransactions": [
       {
-        "streetname": "Leftown, B611",
-        "latitude": "3",
-        "longitude": "-4",
-        "timestamp": "2002-4-01T09:08:51.975",
-        "amount": "6000000000"
+          "vendor": "DS Griffiths Auto Repair",
+          "eposStreetName": "Some Street",
+          "eposPostcode": "AAA1 1AB",
+          "eposLatitude": 52,
+          "eposLongitude": -0.2,
+          "eposTimestamp": "2111-11-1111:51:47",
+          "payeeAccount": "777777",
+          "eposAmount": 9000
       }
-    ],
-    "callRecords": [
-      {
-        "timestamp": "345345-4535",
-        "caller": "jimbob",
-        "reciever": "bobjim"
-      }
-    ]
-  },
-  "names": [
+  ]
+},
+
+  "getSuspectList": [
     {
-        "bankAccountId": 1234,
-        "forenames": "Donna",
-        "surname": "Walton",
-        "dateOfBirth": "1999-09-09",
-        "homeAddress": "An Address"
+      "id": 1,
+      "bankAccountId": 11111,
+      "forenames": "Bob",
+      "surname": "Bobertson",
+      "dateOfBirth": "1999-99-99",
+      "homeAddress": "A LANE"
     },
     {
-        "bankAccountId": 1235,
-        "forenames": "Donna",
-        "surname": "Walton",
-        "dateOfBirth": "1999-09-10",
-        "homeAddress": "An Address"
-    },
-    {
-        "bankAccountId": 1236,
-        "forenames": "Donna",
-        "surname": "Walton",
-        "dateOfBirth": "1999-09-11",
-        "homeAddress": "An Address"
-    }    
-]
+      "id": 2,
+      "bankAccountId": 22222,
+      "forenames": "Bob",
+      "surname": "Bobertson",
+      "dateOfBirth": "1999-99-99",
+      "homeAddress": "A PLACE"
+    }
+  ]
+  
 }

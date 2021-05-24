@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react'
 import {useParams} from "react-router"
-import {api_url} from './constants.json'
 import axios from 'axios'
 import Map from './Map'
 
@@ -12,8 +11,8 @@ const MapView = () => {
     
     useEffect(() => {
 
-        const getProfileData = () => {
-        axios.get(`${api_url}/getSuspect/${reg}`)
+        const getProfileData = () => {     
+        axios.get(`http://localhost:5000/suspect/?vehicleRegistrationNo=${reg}`)
           .then(res => {
           const profileJSON = res.data
           setData(profileJSON)

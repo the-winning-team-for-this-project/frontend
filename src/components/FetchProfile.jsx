@@ -2,7 +2,6 @@ import { useHistory } from 'react-router-dom'
 import ProfileContent from './ProfileContent'
 import {useState, useEffect} from 'react'
 import { useParams } from 'react-router'
-import {api_url} from './constants.json'
 import axios from 'axios'
 
 const FetchProfile = () => {
@@ -16,7 +15,7 @@ const FetchProfile = () => {
   useEffect(() => {
 
     const getProfileData = () => {
-    axios.get(`${api_url}getSuspect/${reg}`)
+    axios.get(`http://localhost:5000/suspect/?vehicleRegistrationNo=${reg}`)
       .then(res => {
       const profileJSON = res.data
       console.log(profileJSON)
