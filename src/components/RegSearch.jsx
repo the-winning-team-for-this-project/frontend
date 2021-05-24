@@ -2,7 +2,7 @@ import { Form, Button, Jumbotron } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
 import { useState } from 'react'
 
-
+//"api_url":"http://3.250.17.215:8080/getSuspect/"
 // for json-server: "http://localhost:5000/suspect/?vehicleRegistrationNo="
 // test reg = ABCD 1AB
 

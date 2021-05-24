@@ -25,7 +25,7 @@ const NameSearch = () => {
   }
   
   const getMatchingNames = () => {
-    axios.post("http://localhost:5000/names/", {
+    axios.get("http://localhost:5000/names/", {
       forenames: name.forename,
       surname: name.surname
     })
