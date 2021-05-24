@@ -22,7 +22,7 @@ const Homepage = () => {
                  </h3>
                  <br />
                  <h5>
-                     Scroll down
+                     Scroll down for more information
                  </h5>
         </div>
         <div className="boxes" className="b1">
@@ -30,7 +30,7 @@ const Homepage = () => {
      <br />
      <br />
         <strong>How to use: </strong>
-             <br />
+            <br />
             <br />
         Direct to vehicle or name search using the Navigation Bar at the top of this page 
              <br />
