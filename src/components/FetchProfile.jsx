@@ -16,7 +16,7 @@ const FetchProfile = () => {
   useEffect(() => {
 
     const getProfileData = () => {
-    axios.get(`${api_url}/getSuspect/${reg}`)
+    axios.get(`${api_url}getSuspect/${reg}`)
       .then(res => {
       const profileJSON = res.data
       console.log(profileJSON)
