@@ -1,6 +1,7 @@
-import React from 'react'
+import { Accordion, Card, ListGroup, Table, Button } from 'react-bootstrap'
+import LocationTableData from './LocationTableData'
 
-const BankDeets = () => {
+const BankDeets = ({ profileData, buttonClick }) => {
 
     const locationData = profileData.locations.map((location, index) => {
         return (
@@ -10,7 +11,6 @@ const BankDeets = () => {
         )
     })
 
-    
     return (
         <div>
             <Accordion defaultActiveKey="0">

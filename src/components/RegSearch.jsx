@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 //"api_url":"http://3.250.17.215:8080/getSuspect/"
 // for json-server: "http://localhost:5000/suspect/?vehicleRegistrationNo="
-// test reg = ABCD 1AB
+// test reg = FK59 TDY
 
 const RegSearch = () => {
 
@@ -16,8 +16,6 @@ const RegSearch = () => {
         setRegSearch(e.target.value) 
     }
 
-    // test reg = FK59 TDY
-
     const handleClick = () => {
         history.push(/get-person/ + regSearch)
     }
@@ -27,13 +25,13 @@ const RegSearch = () => {
         <Jumbotron>
         <h1>Vehicle Search</h1>
         <p>
-            Search using vehicle registration plate
+            Search using for a vehicle using a registration plate
         </p>
         <Form>
             <Form.Group>
                 <Form.Control required size="lg" type="text" placeholder="Enter a registration with correct spaces here eg. AA11 1AA" value={regSearch} onChange={(e)=>handleSubmit(e)}/>
             </Form.Group>
-            <Button type="submit" onClick={handleClick}>Submit</Button>
+            <Button type="button" onClick={handleClick}>Submit</Button>
         </Form>  
         </Jumbotron>       
         </>

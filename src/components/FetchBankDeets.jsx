@@ -1,9 +1,9 @@
 import { useHistory } from 'react-router-dom'
-import axios from 'axios'
 import {useState, useEffect} from 'react'
-import { useParams } from "react-router"
+import { useParams } from 'react-router'
+import {api_url} from './constants.json'
 import BankDeets from './BankDeets'
-
+import axios from 'axios'
 
 const FetchBankDeets = () => {
 
@@ -12,11 +12,11 @@ const FetchBankDeets = () => {
   const params = useParams()
   const bId = params.bId
 
-
   useEffect(() => {
 
     const getData = () => {
-    axios.get(`names/?bankAccountId=/${bId}`)
+    //axios.get(`${api_url}/getBackground/${bId}`)
+    axios.get(`${api_url}getBackground/738923`)
       .then(res => {
       const dataJSON = res.data
       console.log(dataJSON)
@@ -27,12 +27,11 @@ const FetchBankDeets = () => {
         history.push("/page-not-found")
       })
     }
-    // if statement to redirect to 404 if no veh reg
     getData()
     }, [])
 
     const buttonClick = () => {
-      history.push("/map-view/" + reg)
+      history.push("/map-view/" + bId)
     }
     
     return (

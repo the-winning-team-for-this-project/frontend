@@ -13,7 +13,7 @@ const MapView = () => {
     useEffect(() => {
 
         const getProfileData = () => {
-        axios.get(`${api_url}/${reg}`)
+        axios.get(`${api_url}/getSuspect/${reg}`)
           .then(res => {
           const profileJSON = res.data
           setData(profileJSON)

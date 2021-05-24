@@ -1,10 +1,9 @@
 import { useHistory } from 'react-router-dom'
-import axios from 'axios'
-import {useState, useEffect} from 'react'
-import { useParams } from "react-router"
 import ProfileContent from './ProfileContent'
+import {useState, useEffect} from 'react'
+import { useParams } from 'react-router'
 import {api_url} from './constants.json'
-
+import axios from 'axios'
 
 const FetchProfile = () => {
 
@@ -17,7 +16,7 @@ const FetchProfile = () => {
   useEffect(() => {
 
     const getProfileData = () => {
-    axios.get(`${api_url}/${reg}`)
+    axios.get(`${api_url}/getSuspect/${reg}`)
       .then(res => {
       const profileJSON = res.data
       console.log(profileJSON)
@@ -28,7 +27,6 @@ const FetchProfile = () => {
         history.push("/page-not-found")
       })
     }
-    // if statement to redirect to 404 if no veh reg
     getProfileData()
     }, [])
 

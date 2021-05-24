@@ -23,7 +23,7 @@ const Map = ({profileData}) => {
                     <Marker position={[singleLoc.latitude, singleLoc.longitude]}>
                         <Popup position={[singleLoc.latitude, singleLoc.longitude]}>
                         <div>
-                            <h4><b>Address:</b> <br></br> {singleLoc.streetname}</h4>
+                            <h4><b>Address:</b> <br></br> {singleLoc.streetName}</h4>
                             <br></br>
                             <h5><b>Timestamp:</b> <br></br> {singleLoc.timestamp}</h5>
                         </div>
