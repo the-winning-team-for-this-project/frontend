@@ -93,7 +93,7 @@ const BankDeets = ({ profileData, buttonClick }) => {
                             <Table striped bordered hover size="sm">
                                 <thead>
                                     <tr>
-                                        <th>Amount</th>
+                                        <th>Bank</th>
                                         <th>Location</th>
                                         <th>Timestamp</th>
                                         <th>Type</th>
