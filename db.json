@@ -79,23 +79,25 @@
   },
   "names": [
     {
-      "bankAccountId": 1,
-      "forename": "robert",
-      "surname": "bobertson",
-      "dateOfBirth": "10-12-2010"
+        "bankAccountId": 1234,
+        "forenames": "Donna",
+        "surname": "Walton",
+        "dateOfBirth": "1999-09-09",
+        "homeAddress": "An Address"
     },
     {
-      "bankAccountId": 66,
-      "forename": "robert",
-      "surname": "bobertson",
-      "dateOfBirth": "20-12-1400"
+        "bankAccountId": 1235,
+        "forenames": "Donna",
+        "surname": "Walton",
+        "dateOfBirth": "1999-09-10",
+        "homeAddress": "An Address"
     },
     {
-      "bankAccountId": 44,
-      "forename": "robert",
-      "surname": "bobertson",
-      "dateOfBirth": "12-09-1878"
-    }
-
-  ]
+        "bankAccountId": 1236,
+        "forenames": "Donna",
+        "surname": "Walton",
+        "dateOfBirth": "1999-09-11",
+        "homeAddress": "An Address"
+    }    
+]
 }
