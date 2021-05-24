@@ -14,18 +14,22 @@ const Homepage = () => {
         <div className="boxes">
             <h1>
                 <br />
-                Welcome
+               <strong> Welcome </strong>
                  </h1>
                  <br />
                  <h3>
-                     This application can be used to search for person's of interest using name or vehicle registration details.
+                     This application can be used to search for persons of interest using name or vehicle registration details
                  </h3>
+                 <br />
+                 <h5>
+                     Scroll down
+                 </h5>
         </div>
         <div className="boxes" className="b1">
      <h4>
      <br />
      <br />
-        How to use:
+        <strong>How to use: </strong>
              <br />
             <br />
         Direct to vehicle or name search using the Navigation Bar at the top of this page 
@@ -42,7 +46,7 @@ const Homepage = () => {
             <h4>
             <br />
                 <br />
-                Application created by:
+               <strong> Application created by:</strong>
                 <br />
                 <br />
                 Cara Prestwich

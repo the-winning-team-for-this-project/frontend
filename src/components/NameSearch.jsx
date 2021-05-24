@@ -22,10 +22,12 @@ const NameSearch = () => {
     e.preventDefault()
     getMatchingNames()
   }
-
+  
   const getMatchingNames = () => {
-    axios.get("http://localhost:5000/names/")
-    // send in name to the get req
+    axios.get("http://localhost:5000/names/", {
+      forenames: name.forename,
+      surname: name.surname
+    })
       .then(res => {
         const data = res.data
         setMatches(data)
