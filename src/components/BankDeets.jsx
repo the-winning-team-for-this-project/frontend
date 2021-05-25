@@ -4,7 +4,7 @@ import BankCardData from './BankCardData'
 import EPOSData from './EPOSData'
 import ATMData from './ATMData'
 
-const BankDeets = ({ profileData, buttonClick }) => {
+const BankDeets = ({ profileData }) => {
 
     const bankCards = profileData.bankCards.map((card, index) => {
         return (<BankCardData key={index} card={card} />)})

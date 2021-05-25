@@ -35,7 +35,7 @@ const ProfileContent = ({ profileData, buttonClick }) => {
                 <Card>
                     <Card.Header>
                         <Accordion.Toggle as={Card.Header} eventKey="1">
-                            <h3>Suspect Information</h3>
+                            <h3>Person Information</h3>
                         </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="1">
