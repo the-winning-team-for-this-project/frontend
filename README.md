@@ -80,12 +80,17 @@ The diagrams above are Entity Relationship Diagrams, which show how the differen
 
 ![Image of test_coverage](./src/images/test_coverage.png)
 
+As you can see from the Test Coverage report above, we've managed to get overall coverage of 74.3% This could be improved a little bit, as there are a couple of areas of the project
+that we weren't able to test due to time constraints, which would be something to improve on in the future. 
+
 ### Integration Testing
-We used MOCKMVC for integration testing.
+Integration testing tests how different elements in the application work together as a group, rather than solo units. This was done using MockMVC (which is used to perform mock 
+HTTP requests), and JUnit. 
 
 
 ### Unit Testing
-We used Mockito for unit testing.
+Unit testing tests how different elements in the application work independantly of one another, was done using Mockito. Mockito works by mocking any dependencies you're using
+in a class, such as a repository, so you can test a class without having to rely on using dependencies. 
 
 ### Selenium
 ![Image of selenium](./src/images/selen_tests.png)
@@ -96,7 +101,7 @@ The frontend has been isolated and functionally tested locally (on a branch call
 The snapshot testing was carried out once all of the frontend coding was finished. This checks the present state of the React application compared to a previous version to detect any changes in the code.
 
 ## Deployment/ Infrastructure
-The application was hosted on AWS on EC2 instances with the database on a RDS instance. Terraform was used to provision the infrastructure. Ansible was used to configure the different VM's such as the Jenkins machine and the test and production environments. Docker, docker-compose and Java were some of the softwares installed on the relevant machines. Jenkins was used as a CI server where test and production pipelines were set up. Github webhooks were used to trigger builds automatically when code is pushed up to the branches that are being tracked by Jenkins.  
+Talk about pipelines, terraform, ansible here
 
 
 ## Technologies Used
