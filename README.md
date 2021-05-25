@@ -158,22 +158,14 @@ Talk about pipelines, terraform, ansible here
 - Tidy up the databases- some issues eg where the first entry is the name of the column because of importing troubles. Data types need to be tweaked a little (dates saved as strings)
 
 
+## Developers on the Project
+- Cara Prestwich
+- Emily Nixon
+- Joseph Woodward
+- Junaid Sidat
+- Emma Gray
 
-
-Developers on the Project
-
-Cara Prestwich
-Emily Nixon
-Joseph Woodward
-Junaid Sidat
-Emma Gray
-
-
-
-
-
-
-
-
-
-
+## Acknowledgements
+- Krystal Ryan
+- Jordan Harrison
+- All the QA Trainers 
