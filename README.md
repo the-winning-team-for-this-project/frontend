@@ -103,8 +103,7 @@ The frontend has been isolated and functionally tested locally (on a branch call
 The snapshot testing was carried out once all of the frontend coding was finished. This checks the present state of the React application compared to a previous version to detect any changes in the code.
 
 ## Deployment/ Infrastructure
-Talk about pipelines, terraform, ansible here
-
+The application was hosted on AWS on EC2 instances with the database on a RDS instance. Terraform was used to provision the infrastructure. Ansible was used to configure the different VM's such as the Jenkins machine and the test and production environments. Docker, docker-compose and Java were some of the softwares installed on the relevant machines. Jenkins was used as a CI server where test and production pipelines were set up. Github webhooks were used to trigger builds automatically when code is pushed up to the branches that are being tracked by Jenkins.  
 
 ## Technologies Used
 ### Backend
