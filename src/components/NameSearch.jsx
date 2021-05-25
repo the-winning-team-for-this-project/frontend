@@ -47,7 +47,7 @@ const NameSearch = () => {
     <>
     <Jumbotron>
       <h1>Person Search</h1>
-      <p>Search for a person's name.</p>
+      <p>Search for a person's name</p>
       <NameSearchForm handle={handle} clickio={clickio}/>
     </Jumbotron> 
     <CardDeck>    
