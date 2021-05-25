@@ -39,7 +39,8 @@ body {
 
 .App {
   background-color: #282c34;
-  height: 100rem;
+  height: auto;
+  padding-bottom: 20rem;
 }
 
 .card-header:first-child {
