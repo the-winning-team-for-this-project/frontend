@@ -68,17 +68,6 @@ words about this here
 ## Database 
 We set up our database in the following manner:
 
-Step 1 - SSH into VM
-First, we had to SSH onto one of our VMs in the VPC - in this case, our Bastion VM was used.
-Step 2 - Connecting to the database
-Step 3 - Creating the tables
-Next, we created all the tables that would be used in the database.
-Step 4 - importing the datafiles
-Next step was importing the .csv files from the S3 bucket on our AWS account, into our VMs.
-Step 5 - Importing into the database
-From this, we had to import those .csv files into the MySQL database. 
-Step 6 - Fixing keys/tidying up
-
 Setting up the database involved SSH’ing onto our Bastion machine, connecting to the database and importing the datafiles. The CSV files were then imported from the S3 bucket (on AWS) and used on our VMs. 
 
 ![Image of bank ERD](./src/images/bank_erd.png)
