@@ -55,7 +55,11 @@ This part of the application is designed to take a forename and surname input an
 
 ## Architecture Diagram
 ![Image of architecture model](./src/images/architecture_model.png)
-words about this here
+
+This is a diagram which shows the basic structure of our application. It's a three-tiered application, with a data layer, a buisness layer and a presentation layer. 
+The data layer is our database, a MySQL database hosted on a AWS RDS instance. The business layer is our backend, written in Java and utilising the SpringBoot framework, and the 
+presentation layer is our front end, what the end user will see, and its written in HTML, CSS, JavaScript, and React. The business layer and the presentation layer are both
+hosted on AWS EC2 instances. 
 
 
 ![Image of architecture](./src/images/architecture.png)
@@ -81,7 +85,7 @@ Setting up the database involved SSH’ing onto our Bastion machine, connecting 
   
 ![Image of veh ERD](./src/images/veh_erd.png)
 
-
+The diagrams above are Entity Relationship Diagrams, which show how the different tables are connected to each other
 
 ## Testing
 
