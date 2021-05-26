@@ -79,6 +79,7 @@ The diagrams above are Entity Relationship Diagrams, which show how the differen
 As you can see from the Test Coverage report above, we've managed to get overall coverage of 74.3% This could be improved a little bit, as there are a couple of areas of the project
 that we weren't able to test due to time constraints, which would be something to improve on in the future. 
 
+
 ### Integration Testing
 Integration testing tests how different elements in the application work together as a group, rather than solo units. This was done using MockMVC (which is used to perform mock 
 HTTP requests), and JUnit. 
@@ -141,7 +142,6 @@ The application was hosted on AWS on EC2 instances with the database on a RDS in
 ## Things we've handled well
 - Thought about the product owner
 
-
 ## Stretch Goals/ Improvements
 - Split architecture into microservices for ease of development. 
 - Dockerising the product
@@ -161,37 +161,3 @@ The application was hosted on AWS on EC2 instances with the database on a RDS in
 - Krystal Ryan
 - Jordan Harrison
 - All the QA Trainers
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
