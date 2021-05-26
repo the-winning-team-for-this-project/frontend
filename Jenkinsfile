@@ -6,7 +6,7 @@ pipeline{
                         steps{
                             sh """
                             job_name=${JOB_NAME}
-                            ssh -i "/home/jenkins/.ssh/Final-Project.pem" ubuntu@10.0.1.51 -oStrictHostKeyChecking=no << EOF
+                            ssh -i "/home/jenkins/.ssh/Final-Project.pem" ubuntu@\${$job_name} -oStrictHostKeyChecking=no << EOF
                             echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
                             fuser -k 3000/tcp
                             rm -rf ~/frontend/
