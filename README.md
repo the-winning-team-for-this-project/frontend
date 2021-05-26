@@ -22,8 +22,6 @@ They only have the suspect’s name and would like to search the data to determi
 ### Scenario 3: Suspect flees the scene
 > A suspect is spotted fleeing the scene of an incident in a car by an officer. The customer has the vehicle's number plate and must narrow down suspects using the reported number plate and find out where else they have been.
 
-
-
 ## Planning
 
 ### Risk Assessment
@@ -52,7 +50,6 @@ Whilst not part of the specification, we decided to add a map to view the latitu
 This was our second scenario to be completed, done within the second sprint.
 This part of the application is designed to take a forename and surname input and return a list of possible matches to that name. The name card then links through to a profile showing banking details, including EPOS transactions and ATM machine information. To meet the brief in the limited time, we took a descision only to include banking data. A future improvement would be to include cell data information on this profile page.
 
-
 ## Architecture Diagram
 ![Image of architecture model](./src/images/architecture_model.png)
 
@@ -63,7 +60,6 @@ hosted on AWS EC2 instances.
 
 
 ![Image of architecture](./src/images/architecture.png)
-words about this here
 
 ## Database 
 We set up our database in the following manner:
@@ -83,10 +79,10 @@ The diagrams above are Entity Relationship Diagrams, which show how the differen
 As you can see from the Test Coverage report above, we've managed to get overall coverage of 74.3% This could be improved a little bit, as there are a couple of areas of the project
 that we weren't able to test due to time constraints, which would be something to improve on in the future. 
 
+
 ### Integration Testing
 Integration testing tests how different elements in the application work together as a group, rather than solo units. This was done using MockMVC (which is used to perform mock 
 HTTP requests), and JUnit. 
-
 
 ### Unit Testing
 Unit testing tests how different elements in the application work independantly of one another, was done using Mockito. Mockito works by mocking any dependencies you're using
@@ -101,8 +97,14 @@ The frontend has been isolated and functionally tested locally (on a branch call
 The snapshot testing was carried out once all of the frontend coding was finished. This checks the present state of the React application compared to a previous version to detect any changes in the code.
 
 ## Deployment/ Infrastructure
-Talk about pipelines, terraform, ansible here
+The application was hosted on AWS on EC2 instances with the database on a RDS instance. Terraform was used to provision the infrastructure. Ansible was used to configure the different VM's such as the Jenkins machine and the test and production environments. Docker, docker-compose and Java were some of the softwares installed on the relevant machines. Jenkins was used as a CI server where test and production pipelines were set up. Github webhooks were used to trigger builds automatically when code is pushed up to the branches that are being tracked by Jenkins.  
 
+## Technologies Used
+### Backend
+- Java/Spring Boot
+- MySQL
+- H2
+- Maven
 
 ## Technologies Used
 ### Backend
@@ -137,11 +139,8 @@ Talk about pipelines, terraform, ansible here
 - Connected the database, establishing relationships with the data and ensuring access restriction
 - Running out of time
 
-
 ## Things we've handled well
 - Thought about the product owner
-
-
 
 ## Stretch Goals/ Improvements
 - Split architecture into microservices for ease of development. 
@@ -150,7 +149,6 @@ Talk about pipelines, terraform, ansible here
 - Add more detail and information to the front-end, making the application more visually appealing and smoother to use. 
 - Develop the application further to hide irrelevant personal data on screen when a person is searched. 
 - Tidy up the databases- some issues eg where the first entry is the name of the column because of importing troubles. Data types need to be tweaked a little (dates saved as strings)
-
 
 ## Developers on the Project
 - Cara Prestwich
@@ -162,4 +160,4 @@ Talk about pipelines, terraform, ansible here
 ## Acknowledgements
 - Krystal Ryan
 - Jordan Harrison
-- All the QA Trainers 
+- All the QA Trainers
